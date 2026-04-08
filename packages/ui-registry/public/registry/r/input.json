@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "dependencies": ["class-variance-authority"],
+  "registryDependencies": ["@masan-group/input-group", "@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/input/index.ts",
+      "content": "export * from './component';\nexport * from '../input-group';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/forms/input/index.ts"
+    },
+    {
+      "path": "registry/new-york/input/component.tsx",
+      "content": "import * as React from 'react';\n\nimport { cva, type VariantProps } from 'class-variance-authority';\n\nimport { cn } from '../../../../lib/utils';\n\nconst inputVariants = cva(\n  'h-8 w-full min-w-0 border-input bg-card py-0.5 text-sm outline-none transition-[color,box-shadow] selection:bg-primary selection:text-primary-foreground file:inline-flex file:h-6 file:border-0 file:bg-transparent file:font-medium file:text-foreground file:text-sm placeholder:text-muted-foreground disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/3 dark:aria-invalid:ring-destructive/40',\n  {\n    variants: {\n      variant: {\n        default:\n          'rounded-md border focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50',\n        underline:\n          'rounded-none border-0 border-b-1 px-0! pb-1 focus-visible:border-ring focus-visible:border-b-1 focus-visible:shadow-none focus-visible:ring-0',\n      },\n    },\n    defaultVariants: {\n      variant: 'default',\n    },\n  }\n);\n\ninterface InputProps extends React.ComponentProps<'input'>, VariantProps<typeof inputVariants> {\n  prefixIcon?: React.ReactNode;\n  suffixIcon?: React.ReactNode;\n  suffixClass?: string;\n}\n\nconst Input = React.forwardRef<HTMLInputElement, InputProps>(function Input(\n  { className, type, prefixIcon, suffixIcon, suffixClass, variant, ...props },\n  ref\n) {\n  const getPaddingClasses = () => {\n    const hasPrefix = !!prefixIcon;\n    const hasSuffix = !!suffixIcon;\n\n    if (hasPrefix && hasSuffix) {\n      return 'pl-10 pr-10';\n    }\n\n    if (hasPrefix) {\n      return 'pl-10 pr-3';\n    }\n\n    if (hasSuffix) {\n      return 'pl-3 pr-10';\n    }\n\n    return 'px-3';\n  };\n\n  return (\n    <div className={cn('relative w-full', className)}>\n      {prefixIcon && (\n        <div className=\"absolute top-1/2 left-3 -translate-y-1/2 text-muted-foreground\">\n          {prefixIcon}\n        </div>\n      )}\n      <input\n        ref={ref}\n        type={type}\n        data-slot=\"input\"\n        className={cn(\n          'placeholder:text-stale-500!',\n          inputVariants({ variant }),\n          getPaddingClasses(),\n          className\n        )}\n        placeholder={props.placeholder}\n        {...props}\n      />\n      {suffixIcon && (\n        <div\n          className={cn(\n            'absolute top-1/2 right-3 -translate-y-1/2 text-muted-foreground',\n            suffixClass\n          )}\n        >\n          {suffixIcon}\n        </div>\n      )}\n    </div>\n  );\n});\n\nInput.displayName = 'Input';\n\nexport { Input, inputVariants };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/forms/input/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

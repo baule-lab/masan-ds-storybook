@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-watch-field",
+  "dependencies": ["react-hook-form"],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/use-watch-field/use-watch-field.ts",
+      "content": "import type { Control, FieldValues } from 'react-hook-form';\nimport { useWatch } from 'react-hook-form';\n\ntype UseWatchedFieldOptions = {\n  watchName?: string[];\n  control: Control<FieldValues>;\n  enabled?: boolean;\n};\n\ntype UseWatchedFieldReturn = {\n  watchedValues: unknown[];\n  queryParams: Record<string, string>;\n};\n\n/**\n * A hook that watches form fields and triggers a callback when values change.\n * Uses ref-based tracking to detect changes during render, avoiding useEffect.\n *\n * @param options - Configuration options\n * @param options.watchName - Array of field names to watch\n * @param options.control - The react-hook-form control instance\n * @param options.enabled - Whether the watch is enabled (default: true)\n * @returns Object containing watched values and computed query params\n */\nexport function useWatchField({\n  watchName,\n  control,\n  enabled = true,\n}: UseWatchedFieldOptions): UseWatchedFieldReturn {\n  // eslint-disable-next-line @typescript-eslint/no-explicit-any\n  const watchedValues = useWatch({\n    control,\n    name: (watchName ?? []) as any,\n    disabled: !watchName?.length || !enabled,\n  });\n\n  // Compute query params from watched values\n  const queryParams = watchName\n    ? (watchedValues as unknown[]).reduce<Record<string, string>>((acc, value, index) => {\n        if (value) {\n          acc[watchName[index] ?? ''] =\n            typeof value === 'string' ? value : (value as string[]).join(',');\n        }\n        return acc;\n      }, {})\n    : {};\n\n  return {\n    watchedValues: watchedValues as unknown[],\n    queryParams,\n  };\n}\n",
+      "type": "registry:hook",
+      "target": "src/hooks/use-watch-field.ts"
+    }
+  ],
+  "type": "registry:hook"
+}

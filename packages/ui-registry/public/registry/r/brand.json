@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "brand",
+  "title": "Brand",
+  "description": "Brand assets: global loading, Masan logo",
+  "dependencies": [],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/brand/global-loading.tsx",
+      "content": "import { cn } from '../../lib/utils';\nimport { MasanLogoIcon } from './masan-logo';\n\ninterface GlobalLoadingProps {\n  className?: string;\n  text?: string;\n}\n\nexport function GlobalLoading({ className, text }: GlobalLoadingProps) {\n  return (\n    <div\n      className={cn('flex h-screen w-full flex-col items-center justify-center gap-4', className)}\n    >\n      <div className=\"relative\">\n        <MasanLogoIcon className=\"size-20 animate-pulse text-primary\" />\n        <div className=\"absolute inset-0 animate-ping\">\n          <MasanLogoIcon className=\"size-20 text-primary opacity-75\" />\n        </div>\n      </div>\n      {text && <p className=\"animate-pulse font-medium text-muted-foreground text-sm\">{text}</p>}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "src/components/brand/global-loading.tsx"
+    },
+    {
+      "path": "registry/new-york/brand/index.ts",
+      "content": "export * from './masan-logo';\nexport * from './global-loading';\n",
+      "type": "registry:component",
+      "target": "src/components/brand/index.ts"
+    },
+    {
+      "path": "registry/new-york/brand/masan-logo.tsx",
+      "content": "import type { ImgHTMLAttributes } from 'react';\nimport { cn } from '../../lib/utils';\n\nexport function MasanLogo({ className, ...props }: ImgHTMLAttributes<HTMLImageElement>) {\n  return (\n    <>\n      <img\n        src=\"/logo-masan.png\"\n        alt=\"Masan Group\"\n        className={cn('h-12 w-auto dark:hidden', className)}\n        {...props}\n      />\n      <img\n        src=\"/logo-masan-dark.png\"\n        alt=\"Masan Group\"\n        className={cn('hidden h-14 w-auto dark:block', className)}\n        {...props}\n      />\n    </>\n  );\n}\n\n// Icon version for sidebar (smaller, square aspect ratio)\nexport function MasanLogoIcon({ className, ...props }: ImgHTMLAttributes<HTMLImageElement>) {\n  return (\n    <>\n      <img\n        src=\"/logo-icon.png\"\n        alt=\"Masan\"\n        className={cn('size-5 object-contain dark:hidden', className)}\n        {...props}\n      />\n      <img\n        src=\"/logo-icon-dark.png\"\n        alt=\"Masan Group\"\n        className={cn('hidden size-5 object-contain dark:block', className)}\n        {...props}\n      />\n    </>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "src/components/brand/masan-logo.tsx"
+    }
+  ],
+  "type": "registry:block"
+}

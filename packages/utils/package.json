@@ -1,0 +1,40 @@
+{
+  "name": "@masan-group/utils",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./date": "./src/date/index.ts",
+    "./chart": "./src/chart/index.ts",
+    "./serializers": "./src/serializers/index.ts",
+    "./array": "./src/array/index.ts",
+    "./async": "./src/async/index.ts",
+    "./data": "./src/data/index.ts",
+    "./guards": "./src/guards/index.ts",
+    "./number": "./src/number/index.ts",
+    "./object": "./src/object/index.ts",
+    "./string": "./src/string/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist node_modules .turbo"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "dependencies": {
+    "@masan-group/types": "workspace:*",
+    "date-fns": "catalog:"
+  }
+}

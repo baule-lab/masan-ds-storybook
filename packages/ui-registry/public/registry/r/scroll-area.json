@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area",
+  "dependencies": ["@radix-ui/react-scroll-area"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/scroll-area/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/scroll-area/index.ts"
+    },
+    {
+      "path": "registry/new-york/scroll-area/component.tsx",
+      "content": "import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';\nimport * as React from 'react';\nimport { cn } from '../../../../lib/utils';\n\ninterface ScrollAreaProps extends React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root> {\n  orientation?: 'vertical' | 'horizontal' | 'both' | 'auto';\n}\n\nconst ScrollArea = React.forwardRef<\n  React.ComponentRef<typeof ScrollAreaPrimitive.Root>,\n  ScrollAreaProps\n>(function ScrollArea({ className, children, orientation = 'vertical', ...props }, ref) {\n  const showVertical =\n    orientation === 'vertical' || orientation === 'both' || orientation === 'auto';\n  const showHorizontal =\n    orientation === 'horizontal' || orientation === 'both' || orientation === 'auto';\n\n  return (\n    <ScrollAreaPrimitive.Root\n      ref={ref}\n      data-slot=\"scroll-area\"\n      className={cn('relative', className)}\n      {...props}\n    >\n      <ScrollAreaPrimitive.Viewport\n        data-slot=\"scroll-area-viewport\"\n        className={cn(\n          'size-full rounded-[inherit] outline-none transition-[color,box-shadow] focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50'\n        )}\n      >\n        {children}\n      </ScrollAreaPrimitive.Viewport>\n      {showVertical && <ScrollBar orientation=\"vertical\" />}\n      {showHorizontal && <ScrollBar orientation=\"horizontal\" />}\n      <ScrollAreaPrimitive.Corner />\n    </ScrollAreaPrimitive.Root>\n  );\n});\n\nconst ScrollBar = React.forwardRef<\n  React.ComponentRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,\n  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>\n>(function ScrollBar({ className, orientation = 'vertical', ...props }, ref) {\n  return (\n    <ScrollAreaPrimitive.ScrollAreaScrollbar\n      ref={ref}\n      data-slot=\"scroll-area-scrollbar\"\n      orientation={orientation}\n      className={cn(\n        'flex touch-none select-none p-px transition-colors',\n        orientation === 'vertical' && 'h-full w-2.5 border-l border-l-transparent',\n        orientation === 'horizontal' && 'h-2.5 flex-col border-t border-t-transparent',\n        className\n      )}\n      {...props}\n    >\n      <ScrollAreaPrimitive.ScrollAreaThumb\n        data-slot=\"scroll-area-thumb\"\n        className=\"relative flex-1 rounded-full bg-border\"\n      />\n    </ScrollAreaPrimitive.ScrollAreaScrollbar>\n  );\n});\n\nexport { ScrollArea, ScrollBar };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/scroll-area/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

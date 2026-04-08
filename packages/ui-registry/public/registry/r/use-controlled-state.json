@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-controlled-state",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/use-controlled-state/use-controlled-state.ts",
+      "content": "import * as React from 'react';\n\nexport interface UseControlledStateOptions<T> {\n  /**\n   * Controlled value. When provided, the component is controlled.\n   */\n  value?: T;\n  /**\n   * Default value for uncontrolled mode.\n   */\n  defaultValue?: T;\n  /**\n   * Callback fired when the value changes (for controlled mode).\n   */\n  onChange?: (value: T) => void;\n}\n\n/**\n * Hook to manage controlled/uncontrolled state for form controls.\n *\n * @example\n * // Controlled mode\n * const [value, setValue] = useControlledState({\n *   value: controlledValue,\n *   onChange: (newValue) => setControlledValue(newValue),\n * });\n *\n * @example\n * // Uncontrolled mode\n * const [value, setValue] = useControlledState({\n *   defaultValue: 'initial',\n * });\n */\nexport function useControlledState<T>({\n  value: controlledValue,\n  defaultValue,\n  onChange,\n}: UseControlledStateOptions<T>): [T | undefined, (value: T | undefined) => void] {\n  // A field is considered controlled **only** when `value` is provided.\n  // Presence of `onChange` alone should not force controlled mode; this\n  // allows patterns like uncontrolled components that still emit changes.\n  const isControlled = controlledValue !== undefined;\n  const [internalValue, setInternalValue] = React.useState<T | undefined>(defaultValue);\n\n  const value = isControlled ? controlledValue : internalValue;\n\n  const setValue = (newValue: T | undefined) => {\n    if (!isControlled) {\n      setInternalValue(newValue);\n    }\n    // Always notify listeners when the value changes, regardless of mode.\n    onChange?.(newValue as T);\n  };\n\n  return [value, setValue];\n}\n",
+      "type": "registry:hook",
+      "target": "src/hooks/use-controlled-state.ts"
+    }
+  ],
+  "type": "registry:hook"
+}

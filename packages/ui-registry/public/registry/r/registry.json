@@ -1,0 +1,4322 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "nomianlabs",
+  "homepage": "https://github.com/masan-group/fe-boilerplate",
+  "items": [
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/button-group/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/button-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/button-group/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/button-group/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["@masan-group/separator", "@masan-group/utils"]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/button/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/button/index.ts"
+        },
+        {
+          "path": "registry/new-york/button/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/button/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["@masan-group/spinner", "@masan-group/utils"]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/context-menu/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/context-menu/index.ts"
+        },
+        {
+          "path": "registry/new-york/context-menu/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/context-menu/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-context-menu", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/dropdown-menu/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/dropdown-menu/index.ts"
+        },
+        {
+          "path": "registry/new-york/dropdown-menu/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/dropdown-menu/component.tsx"
+        }
+      ],
+      "dependencies": ["@base-ui/react", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/menubar/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/menubar/index.ts"
+        },
+        {
+          "path": "registry/new-york/menubar/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/menubar/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-menubar", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/navigation-menu/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/navigation-menu/index.ts"
+        },
+        {
+          "path": "registry/new-york/navigation-menu/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/navigation-menu/component.tsx"
+        }
+      ],
+      "dependencies": [
+        "@radix-ui/react-navigation-menu",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/pagination/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/pagination/index.ts"
+        },
+        {
+          "path": "registry/new-york/pagination/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/pagination/component.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/stepper/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/stepper/index.ts"
+        },
+        {
+          "path": "registry/new-york/stepper/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/stepper/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "@stepperize/react", "class-variance-authority"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/tabs/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/tabs/index.ts"
+        },
+        {
+          "path": "registry/new-york/tabs/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/tabs/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-tabs"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/toggle-group/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/toggle-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/toggle-group/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/toggle-group/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-toggle-group", "class-variance-authority"],
+      "registryDependencies": ["@masan-group/toggle", "@masan-group/utils"]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/toggle/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/toggle/index.ts"
+        },
+        {
+          "path": "registry/new-york/toggle/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/actions/toggle/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-toggle", "class-variance-authority"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/accordion/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/accordion/index.ts"
+        },
+        {
+          "path": "registry/new-york/accordion/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/accordion/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/aspect-ratio/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/aspect-ratio/index.ts"
+        },
+        {
+          "path": "registry/new-york/aspect-ratio/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/aspect-ratio/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-aspect-ratio"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/avatar/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/avatar/index.ts"
+        },
+        {
+          "path": "registry/new-york/avatar/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/avatar/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-avatar"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/badge/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/badge/index.ts"
+        },
+        {
+          "path": "registry/new-york/badge/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/badge/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/breadcrumb/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/breadcrumb/index.ts"
+        },
+        {
+          "path": "registry/new-york/breadcrumb/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/breadcrumb/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/card/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/card/index.ts"
+        },
+        {
+          "path": "registry/new-york/card/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/card/component.tsx"
+        }
+      ],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/carousel/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/carousel/index.ts"
+        },
+        {
+          "path": "registry/new-york/carousel/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/carousel/component.tsx"
+        }
+      ],
+      "dependencies": ["embla-carousel-react", "lucide-react"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/chart/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/chart/index.ts"
+        },
+        {
+          "path": "registry/new-york/chart/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/chart/component.tsx"
+        }
+      ],
+      "dependencies": ["recharts"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/collapsible/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/collapsible/index.ts"
+        },
+        {
+          "path": "registry/new-york/collapsible/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/collapsible/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-collapsible"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "label-value",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/label-value/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/label-value/index.ts"
+        },
+        {
+          "path": "registry/new-york/label-value/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/label-value/component.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/label/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/label/index.ts"
+        },
+        {
+          "path": "registry/new-york/label/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/label/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-label"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/resizable/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/resizable/index.ts"
+        },
+        {
+          "path": "registry/new-york/resizable/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/resizable/component.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "react-resizable-panels"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/scroll-area/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/scroll-area/index.ts"
+        },
+        {
+          "path": "registry/new-york/scroll-area/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/scroll-area/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-scroll-area"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/separator/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/separator/index.ts"
+        },
+        {
+          "path": "registry/new-york/separator/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/separator/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-separator"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/sidebar/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/sidebar/index.ts"
+        },
+        {
+          "path": "registry/new-york/sidebar/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/sidebar/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority", "lucide-react"],
+      "registryDependencies": [
+        "@masan-group/button",
+        "@masan-group/input",
+        "@masan-group/separator",
+        "@masan-group/sheet",
+        "@masan-group/skeleton",
+        "@masan-group/tooltip",
+        "@masan-group/utils"
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/table/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/table/index.ts"
+        },
+        {
+          "path": "registry/new-york/table/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/table/component.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "tree-view",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/tree-view/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/tree-view/index.ts"
+        },
+        {
+          "path": "registry/new-york/tree-view/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/display/tree-view/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-accordion", "class-variance-authority", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/alert/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/alert/index.ts"
+        },
+        {
+          "path": "registry/new-york/alert/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/alert/component.tsx"
+        }
+      ],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/empty-state/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/empty-state/index.ts"
+        },
+        {
+          "path": "registry/new-york/empty-state/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/empty-state/component.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/progress/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/progress/index.ts"
+        },
+        {
+          "path": "registry/new-york/progress/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/progress/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-progress"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/skeleton/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/skeleton/index.ts"
+        },
+        {
+          "path": "registry/new-york/skeleton/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/skeleton/component.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/sonner/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/sonner/index.ts"
+        },
+        {
+          "path": "registry/new-york/sonner/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/sonner/component.tsx"
+        }
+      ],
+      "dependencies": ["class-variance-authority", "sonner"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/spinner/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/spinner/index.ts"
+        },
+        {
+          "path": "registry/new-york/spinner/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/feedback/spinner/component.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/calendar/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/calendar/index.ts"
+        },
+        {
+          "path": "registry/new-york/calendar/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/calendar/component.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "react-day-picker"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "cascader",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/cascader/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/cascader/index.ts"
+        },
+        {
+          "path": "registry/new-york/cascader/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/cascader/component.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["@masan-group/drawer", "@masan-group/popover", "@masan-group/utils"]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/checkbox/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/checkbox/index.ts"
+        },
+        {
+          "path": "registry/new-york/checkbox/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/checkbox/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-checkbox", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/command/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/command/index.ts"
+        },
+        {
+          "path": "registry/new-york/command/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/command/component.tsx"
+        }
+      ],
+      "dependencies": ["cmdk", "lucide-react"],
+      "registryDependencies": [
+        "@masan-group/dialog",
+        "@masan-group/input-group",
+        "@masan-group/utils"
+      ]
+    },
+    {
+      "name": "dropzone",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/dropzone/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/dropzone/index.ts"
+        },
+        {
+          "path": "registry/new-york/dropzone/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/dropzone/component.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "react-dropzone"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/form/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/form/index.ts"
+        },
+        {
+          "path": "registry/new-york/form/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/form/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot", "react-hook-form"],
+      "registryDependencies": ["@masan-group/label", "@masan-group/utils"]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/input-group/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/input-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/input-group/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/input-group/component.tsx"
+        }
+      ],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/textarea", "@masan-group/utils"]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/input-otp/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/input-otp/index.ts"
+        },
+        {
+          "path": "registry/new-york/input-otp/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/input-otp/component.tsx"
+        }
+      ],
+      "dependencies": ["input-otp", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/input/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/input/index.ts"
+        },
+        {
+          "path": "registry/new-york/input/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/input/component.tsx"
+        }
+      ],
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["@masan-group/input-group", "@masan-group/utils"]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/radio-group/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/radio-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/radio-group/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/radio-group/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-radio-group", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/select/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/select/index.ts"
+        },
+        {
+          "path": "registry/new-york/select/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/select/component.tsx"
+        }
+      ],
+      "dependencies": ["@base-ui/react", "lucide-react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/slider/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/slider/index.ts"
+        },
+        {
+          "path": "registry/new-york/slider/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/slider/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slider"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/switch/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/switch/index.ts"
+        },
+        {
+          "path": "registry/new-york/switch/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/switch/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-switch"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/textarea/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/textarea/index.ts"
+        },
+        {
+          "path": "registry/new-york/textarea/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/forms/textarea/component.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/alert-dialog/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/alert-dialog/index.ts"
+        },
+        {
+          "path": "registry/new-york/alert-dialog/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/alert-dialog/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-alert-dialog"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/dialog/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/dialog/index.ts"
+        },
+        {
+          "path": "registry/new-york/dialog/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/dialog/component.tsx"
+        }
+      ],
+      "dependencies": ["@base-ui/react", "lucide-react"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/drawer/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/drawer/index.ts"
+        },
+        {
+          "path": "registry/new-york/drawer/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/drawer/component.tsx"
+        }
+      ],
+      "dependencies": ["vaul"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/hover-card/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/hover-card/index.ts"
+        },
+        {
+          "path": "registry/new-york/hover-card/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/hover-card/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-hover-card"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/popover/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/popover/index.ts"
+        },
+        {
+          "path": "registry/new-york/popover/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/popover/component.tsx"
+        }
+      ],
+      "dependencies": ["@base-ui/react"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/sheet/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/sheet/index.ts"
+        },
+        {
+          "path": "registry/new-york/sheet/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/sheet/component.tsx"
+        }
+      ],
+      "dependencies": ["@base-ui/react", "lucide-react"],
+      "registryDependencies": ["@masan-group/button", "@masan-group/utils"]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/new-york/tooltip/index.ts",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/tooltip/index.ts"
+        },
+        {
+          "path": "registry/new-york/tooltip/component.tsx",
+          "type": "registry:ui",
+          "target": "src/components/ui/overlays/tooltip/component.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-tooltip"],
+      "registryDependencies": ["@masan-group/utils"]
+    },
+    {
+      "name": "shared-ui-components",
+      "type": "registry:block",
+      "title": "Shared UI Components",
+      "description": "Bundled components folder from @masan-group/shared-ui.",
+      "registryDependencies": [
+        "@masan-group/shared-ui-lib",
+        "@masan-group/shared-ui-utils",
+        "@masan-group/shared-ui-hooks",
+        "@masan-group/shared-ui-context",
+        "@masan-group/shared-ui-styles",
+        "@masan-group/shared-ui-types"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-components/brand/global-loading.tsx",
+          "type": "registry:component",
+          "target": "src/components/brand/global-loading.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/brand/index.ts",
+          "type": "registry:component",
+          "target": "src/components/brand/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/brand/masan-logo.tsx",
+          "type": "registry:component",
+          "target": "src/components/brand/masan-logo.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/base/chart-wrapper.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/charts/base/chart-wrapper.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/hooks/use-chart-formatter.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/charts/hooks/use-chart-formatter.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/types/chart-formatting.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/charts/types/chart-formatting.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/types/chart-types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/types/chart-types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/utils/chart-colors.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/utils/chart-colors.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/utils/chart-theme.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/utils/chart-theme.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/charts/utils/format-x-axis-label.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/utils/format-x-axis-label.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/bulk-actions.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/bulk-actions.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/column-header.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/column-header.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/data-table.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/data-table.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/faceted-filter.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/faceted-filter.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/form-toolbar/form-data-table-faceted-filter.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/form-toolbar/form-data-table-faceted-filter.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/form-toolbar/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/form-toolbar/index.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/table-body.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/table-body.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/table-empty-state.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/table-empty-state.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/table-header.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/table-header.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/table-pagination.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/table-pagination.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/table-resize-handle.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/table-resize-handle.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/toolbar.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/toolbar.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/use-columns.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/use-columns.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/utils/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/utils/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/view-options/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/view-options/index.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/data-table/view-options/user-view-options-storage.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/data-table/view-options/user-view-options-storage.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker-v2/date-picker-v2.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker-v2/date-picker-v2.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker-v2/date-range-picker-v2.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker-v2/date-range-picker-v2.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker-v2/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker-v2/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/date/date-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/date/date-range-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-range-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/date/date-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/date/date-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/month/month-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/month/month-range-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-range-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/month/month-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/month/month-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/presets.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/presets.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/utils.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/utils.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/week/week-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/week/week-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/week/week-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/week/week-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/year/year-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/year/year-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/date-picker/year/year-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/year/year-view.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/components/delete-template-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/delete-template-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/components/filter-field.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/filter-field.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/components/rename-template-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/rename-template-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/components/save-template-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/save-template-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/components/template-chip.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/template-chip.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/filter-panel.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/filter-panel.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/hooks/use-persistent-filter-template.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/hooks/use-persistent-filter-template.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/hooks/use-sticky-observer.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/hooks/use-sticky-observer.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/hooks/use-template-manager.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/hooks/use-template-manager.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/i18n.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/i18n.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/utils/filter-value.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/utils/filter-value.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel-v2/utils/grid.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/utils/grid.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/filter-panel/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/form-controls/debounce-input.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/form-controls/debounce-input.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/form-controls/editable.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/form-controls/editable.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/form-controls/form-control.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/form-controls/form-control.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/form-controls/form-debounce-input.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/form-controls/form-debounce-input.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/form-controls/form-input.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/form-controls/form-input.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/form-controls/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/form-controls/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/map/animated-pos-marker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/map/animated-pos-marker.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/map/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/map/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/map/map-cluster-layer.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/map/map-cluster-layer.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/map/map.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/map/map.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/ml-chart-loading/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/ml-chart-loading/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/ml-chart-loading/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/ml-chart-loading/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/index.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/shadcn-action-element.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-action-element.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/shadcn-drag-handle.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-drag-handle.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/shadcn-not-toggle.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-not-toggle.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/shadcn-value-editor.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-value-editor.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/shadcn-value-selector.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-value-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/query-builder/utils.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/utils.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/timeline/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/timeline/timeline-layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/timeline-layout.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/timeline/timeline.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/timeline.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/features/timeline/types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/index.ts",
+          "type": "registry:component",
+          "target": "src/components/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/app-header.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/app-header.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/app-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/app-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/app-title.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/app-title.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-layout-compact.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-layout-compact.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-layout-default.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-layout-default.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-layout-full.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-layout-full.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-sidebar-floating.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-sidebar-floating.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-sidebar-inset.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-sidebar-inset.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-sidebar-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-sidebar-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-theme-dark.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-theme-dark.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-theme-light.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-theme-light.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/icon-theme-system.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-theme-system.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer-icons/index.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer/config-drawer-font-size.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-font-size.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer/config-drawer-layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-layout.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer/config-drawer-shared.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-shared.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer/config-drawer-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer/config-drawer-theme.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-theme.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/config-drawer/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/index.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/header.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/header.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/index.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/layout-context.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/layout-context.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/layout.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/main.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/main.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/nav-group.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-group.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/nav-item-renderer.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-item-renderer.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/nav-user.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-user.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/nav-utils.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-utils.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/theme-switch.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/theme-switch.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/top-nav.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/top-nav.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/layout/types.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/async-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/async-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-select/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/async-wrapper/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-wrapper/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/async-wrapper/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-wrapper/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/click-to-edit/click-to-edit-variants.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/click-to-edit/click-to-edit-variants.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/click-to-edit/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/click-to-edit/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/click-to-edit/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/click-to-edit/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/copy-button/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/copy-button/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/copy-button/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/copy-button/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/custom-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/custom-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/custom-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/custom-select/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/input-tags/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/input-tags/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/input-tags/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/input-tags/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/long-text/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/long-text/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/long-text/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/long-text/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/modals/base-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/base-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/modals/base-drawer.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/base-drawer.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/modals/confirm-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/confirm-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/modals/global-modal.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/global-modal.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/modals/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/index.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/multi-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/multi-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/multi-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/multi-select/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/number-input/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/number-input/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/number-input/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/number-input/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/segmented-control/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/segmented-control/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/segmented-control/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/segmented-control/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/selected-badge-node/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/selected-badge-node/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/selected-badge-node/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/selected-badge-node/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-avatar.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-avatar.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-badge.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-badge.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-breadcrumb.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-breadcrumb.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-button.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-button.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-card.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-carousel.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-carousel.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-chart.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-chart.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-data-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-data-card.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-form.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-form.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-image.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-image.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-input.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-input.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-list.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-list.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-page.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-page.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-select.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-select.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-table.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-table.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-tabs.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-tabs.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-text.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-text.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/skeletons/skeleton-timeline.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-timeline.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/tree-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/tree-select/hooks/use-get-screen-size.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/hooks/use-get-screen-size.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/tree-select/hooks/use-tree-select-logic.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/hooks/use-tree-select-logic.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/tree-select/hooks/use-tree-select-virtualize.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/hooks/use-tree-select-virtualize.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/tree-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/tree-select/types.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/virtualized-list/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/virtualized-list/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/patterns/virtualized-list/virtualized-container.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/virtualized-list/virtualized-container.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/button-group/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/button-group/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/button-group/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/button-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/button/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/button/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/button/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/button/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/context-menu/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/context-menu/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/context-menu/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/context-menu/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/dropdown-menu/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/dropdown-menu/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/dropdown-menu/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/dropdown-menu/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/menubar/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/menubar/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/menubar/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/menubar/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/navigation-menu/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/navigation-menu/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/navigation-menu/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/navigation-menu/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/pagination/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/pagination/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/pagination/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/pagination/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/stepper/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/stepper/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/stepper/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/stepper/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/tabs/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/tabs/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/tabs/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/tabs/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/toggle-group/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/toggle-group/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/toggle-group/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/toggle-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/toggle/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/toggle/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/actions/toggle/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/actions/toggle/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/accordion/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/accordion/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/accordion/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/accordion/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/aspect-ratio/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/aspect-ratio/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/aspect-ratio/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/aspect-ratio/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/avatar/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/avatar/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/avatar/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/avatar/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/badge/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/badge/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/badge/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/badge/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/breadcrumb/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/breadcrumb/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/breadcrumb/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/breadcrumb/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/card/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/card/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/card/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/card/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/carousel/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/carousel/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/carousel/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/carousel/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/chart/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/chart/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/chart/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/chart/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/collapsible/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/collapsible/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/collapsible/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/collapsible/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/label-value/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/label-value/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/label-value/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/label-value/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/label/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/label/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/label/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/label/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/resizable/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/resizable/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/resizable/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/resizable/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/scroll-area/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/scroll-area/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/scroll-area/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/scroll-area/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/separator/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/separator/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/separator/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/separator/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/sidebar/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/sidebar/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/sidebar/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/sidebar/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/table/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/table/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/table/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/table/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/tree-view/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/display/tree-view/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/display/tree-view/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/display/tree-view/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/alert/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/alert/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/alert/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/alert/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/empty-state/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/empty-state/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/empty-state/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/empty-state/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/progress/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/progress/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/progress/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/progress/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/skeleton/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/skeleton/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/skeleton/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/skeleton/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/sonner/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/sonner/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/sonner/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/sonner/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/spinner/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/spinner/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/feedback/spinner/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/feedback/spinner/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/components/ViewHeader.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/components/ViewHeader.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/index.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/Presets.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/Presets.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/types.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/types.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/utils.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/utils.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/views/DayView.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/views/DayView.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/views/MonthGridView.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/views/MonthGridView.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/views/WeekView.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/views/WeekView.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/calendar-v2/views/YearGridView.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/calendar-v2/views/YearGridView.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/calendar/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/calendar/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/cascader/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/cascader/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/cascader/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/cascader/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/checkbox/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/checkbox/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/checkbox/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/checkbox/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/command/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/command/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/command/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/command/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/dropzone/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/dropzone/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/dropzone/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/dropzone/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/form/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/form/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/form/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/form/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/input-group/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/input-group/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/input-group/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/input-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/input-otp/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/input-otp/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/input-otp/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/input-otp/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/input/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/input/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/input/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/input/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/radio-group/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/radio-group/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/radio-group/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/radio-group/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/select/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/slider/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/slider/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/slider/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/slider/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/switch/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/switch/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/switch/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/switch/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/textarea/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/textarea/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/forms/textarea/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/forms/textarea/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/alert-dialog/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/alert-dialog/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/alert-dialog/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/alert-dialog/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/dialog/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/dialog/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/dialog/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/dialog/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/drawer/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/drawer/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/drawer/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/drawer/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/hover-card/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/hover-card/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/hover-card/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/hover-card/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/popover/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/popover/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/popover/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/popover/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/sheet/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/sheet/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/sheet/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/sheet/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/tooltip/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/tooltip/component.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-components/ui/overlays/tooltip/index.ts",
+          "type": "registry:component",
+          "target": "src/components/ui/overlays/tooltip/index.ts"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "@radix-ui/react-accordion",
+        "@radix-ui/react-alert-dialog",
+        "@radix-ui/react-aspect-ratio",
+        "@radix-ui/react-avatar",
+        "@radix-ui/react-checkbox",
+        "@radix-ui/react-collapsible",
+        "@radix-ui/react-context-menu",
+        "@radix-ui/react-hover-card",
+        "@radix-ui/react-icons",
+        "@radix-ui/react-label",
+        "@radix-ui/react-menubar",
+        "@radix-ui/react-navigation-menu",
+        "@radix-ui/react-progress",
+        "@radix-ui/react-radio-group",
+        "@radix-ui/react-scroll-area",
+        "@radix-ui/react-separator",
+        "@radix-ui/react-slider",
+        "@radix-ui/react-slot",
+        "@radix-ui/react-switch",
+        "@radix-ui/react-tabs",
+        "@radix-ui/react-toggle",
+        "@radix-ui/react-toggle-group",
+        "@radix-ui/react-tooltip",
+        "@stepperize/react",
+        "@tanstack/react-table",
+        "@tanstack/react-virtual",
+        "class-variance-authority",
+        "cmdk",
+        "date-fns",
+        "embla-carousel-react",
+        "framer-motion",
+        "input-otp",
+        "lucide-react",
+        "maplibre-gl",
+        "next-themes",
+        "react-day-picker",
+        "react-dropzone",
+        "react-hook-form",
+        "react-number-format",
+        "react-querybuilder",
+        "react-resizable-panels",
+        "recharts",
+        "sonner",
+        "vaul"
+      ]
+    },
+    {
+      "name": "shared-ui-hooks",
+      "type": "registry:block",
+      "title": "Shared UI Hooks",
+      "description": "Bundled hooks folder from @masan-group/shared-ui.",
+      "registryDependencies": ["@masan-group/shared-ui-lib", "@masan-group/shared-ui-utils"],
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-badge-variant.tsx",
+          "type": "registry:hook",
+          "target": "src/hooks/use-badge-variant.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-controlled-state.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-controlled-state.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-debounce-callback.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-debounce-callback.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-debounced-value.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-debounced-value.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-full-height-table.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-full-height-table.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-infinite-scroll.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-infinite-scroll.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-intersection-observer.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-intersection-observer.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-mobile.tsx",
+          "type": "registry:hook",
+          "target": "src/hooks/use-mobile.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-reduced-motion.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-reduced-motion.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-table-local-state.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-table-local-state.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-table-url-state.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-table-url-state.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-hooks/use-watch-field.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-watch-field.ts"
+        }
+      ],
+      "dependencies": ["@tanstack/react-table", "lucide-react", "react-hook-form"]
+    },
+    {
+      "name": "shared-ui-context",
+      "type": "registry:block",
+      "title": "Shared UI Context",
+      "description": "Bundled context folder from @masan-group/shared-ui.",
+      "registryDependencies": ["@masan-group/shared-ui-lib", "@masan-group/shared-ui-utils"],
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-context/dexie-context.tsx",
+          "type": "registry:lib",
+          "target": "src/context/dexie-context.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/font-provider.tsx",
+          "type": "registry:lib",
+          "target": "src/context/font-provider.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/index.ts",
+          "type": "registry:lib",
+          "target": "src/context/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/layout-settings-provider.tsx",
+          "type": "registry:lib",
+          "target": "src/context/layout-settings-provider.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/modal-provider/context.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/context.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/modal-provider/index.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/modal-provider/modals.tsx",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/modals.tsx"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/modal-provider/type.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/type.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/modal-provider/useModals.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/useModals.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-context/theme-provider.tsx",
+          "type": "registry:lib",
+          "target": "src/context/theme-provider.tsx"
+        }
+      ],
+      "dependencies": ["dexie"]
+    },
+    {
+      "name": "shared-ui-lib",
+      "type": "registry:block",
+      "title": "Shared UI Lib",
+      "description": "Bundled lib folder from @masan-group/shared-ui.",
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-lib/chart-colors.ts",
+          "type": "registry:lib",
+          "target": "src/lib/chart-colors.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/cookies.ts",
+          "type": "registry:lib",
+          "target": "src/lib/cookies.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/dexie/dexie.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/dexie.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/dexie/hooks/use-dexie-pagination.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/hooks/use-dexie-pagination.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/dexie/hooks/use-dexie-table.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/hooks/use-dexie-table.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/dexie/hooks/use-live-query.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/hooks/use-live-query.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/dexie/index.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/suppress-scroll-on-focus.ts",
+          "type": "registry:lib",
+          "target": "src/lib/suppress-scroll-on-focus.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-lib/utils.ts",
+          "type": "registry:lib",
+          "target": "src/lib/utils.ts"
+        }
+      ],
+      "dependencies": ["clsx", "dexie", "dexie-react-hooks", "tailwind-merge"]
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:block",
+      "title": "Date Picker",
+      "description": "Date picker with range, month, week, and year views",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/calendar",
+        "@masan-group/popover",
+        "@masan-group/tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/date-picker/date/date-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/date/date-range-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-range-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/date/date-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/date/date-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/date/date-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/index.ts"
+        },
+        {
+          "path": "registry/new-york/date-picker/month/month-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/month/month-range-picker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-range-picker.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/month/month-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/month/month-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/month/month-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/presets.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/presets.ts"
+        },
+        {
+          "path": "registry/new-york/date-picker/types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/types.ts"
+        },
+        {
+          "path": "registry/new-york/date-picker/utils.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/utils.ts"
+        },
+        {
+          "path": "registry/new-york/date-picker/week/week-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/week/week-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/week/week-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/week/week-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/year/year-range-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/year/year-range-view.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker/year/year-view.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker/year/year-view.tsx"
+        }
+      ],
+      "dependencies": ["date-fns", "lucide-react"]
+    },
+    {
+      "name": "modals",
+      "type": "registry:block",
+      "title": "Modal System",
+      "description": "Dialog, drawer, and confirm modal components with programmatic API",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/dialog",
+        "@masan-group/alert-dialog",
+        "@masan-group/sheet",
+        "@masan-group/modal-provider"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/modals/base-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/base-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/modals/base-drawer.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/base-drawer.tsx"
+        },
+        {
+          "path": "registry/new-york/modals/confirm-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/confirm-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/modals/global-modal.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/global-modal.tsx"
+        },
+        {
+          "path": "registry/new-york/modals/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/modals/index.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "query-builder",
+      "type": "registry:block",
+      "title": "Query Builder",
+      "description": "Visual query builder with shadcn/ui styling",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/select",
+        "@masan-group/input",
+        "@masan-group/switch"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/query-builder/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/index.tsx"
+        },
+        {
+          "path": "registry/new-york/query-builder/shadcn-action-element.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-action-element.tsx"
+        },
+        {
+          "path": "registry/new-york/query-builder/shadcn-drag-handle.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-drag-handle.tsx"
+        },
+        {
+          "path": "registry/new-york/query-builder/shadcn-not-toggle.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-not-toggle.tsx"
+        },
+        {
+          "path": "registry/new-york/query-builder/shadcn-value-editor.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-value-editor.tsx"
+        },
+        {
+          "path": "registry/new-york/query-builder/shadcn-value-selector.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/shadcn-value-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/query-builder/utils.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/query-builder/utils.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "react-querybuilder"]
+    },
+    {
+      "name": "skeletons",
+      "type": "registry:block",
+      "title": "Skeleton Components",
+      "description": "Pre-built skeleton loading states for common UI patterns",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/skeleton",
+        "@masan-group/card",
+        "@masan-group/badge",
+        "@masan-group/separator"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/skeletons/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/index.ts"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-avatar.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-avatar.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-badge.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-badge.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-breadcrumb.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-breadcrumb.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-button.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-button.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-card.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-carousel.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-carousel.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-chart.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-chart.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-data-card.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-data-card.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-form.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-form.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-image.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-image.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-input.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-input.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-list.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-list.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-page.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-page.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-select.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-select.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-table.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-table.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-tabs.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-tabs.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-text.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-text.tsx"
+        },
+        {
+          "path": "registry/new-york/skeletons/skeleton-timeline.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/skeletons/skeleton-timeline.tsx"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "charts",
+      "type": "registry:block",
+      "title": "Chart Utilities",
+      "description": "Chart wrapper, formatters, and theme utilities for Recharts",
+      "registryDependencies": ["@masan-group/utils", "@masan-group/chart-colors"],
+      "files": [
+        {
+          "path": "registry/new-york/charts/base/chart-wrapper.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/charts/base/chart-wrapper.tsx"
+        },
+        {
+          "path": "registry/new-york/charts/hooks/use-chart-formatter.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/charts/hooks/use-chart-formatter.tsx"
+        },
+        {
+          "path": "registry/new-york/charts/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/index.ts"
+        },
+        {
+          "path": "registry/new-york/charts/types/chart-formatting.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/charts/types/chart-formatting.tsx"
+        },
+        {
+          "path": "registry/new-york/charts/types/chart-types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/types/chart-types.ts"
+        },
+        {
+          "path": "registry/new-york/charts/utils/chart-colors.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/utils/chart-colors.ts"
+        },
+        {
+          "path": "registry/new-york/charts/utils/chart-theme.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/utils/chart-theme.ts"
+        },
+        {
+          "path": "registry/new-york/charts/utils/format-x-axis-label.ts",
+          "type": "registry:component",
+          "target": "src/components/features/charts/utils/format-x-axis-label.ts"
+        }
+      ],
+      "dependencies": ["date-fns", "recharts"]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:block",
+      "title": "Timeline",
+      "description": "Vertical timeline component with multiple layout variants",
+      "registryDependencies": ["@masan-group/utils"],
+      "files": [
+        {
+          "path": "registry/new-york/timeline/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/index.ts"
+        },
+        {
+          "path": "registry/new-york/timeline/timeline-layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/timeline-layout.tsx"
+        },
+        {
+          "path": "registry/new-york/timeline/timeline.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/timeline.tsx"
+        },
+        {
+          "path": "registry/new-york/timeline/types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/timeline/types.ts"
+        }
+      ],
+      "dependencies": ["class-variance-authority", "framer-motion", "lucide-react"]
+    },
+    {
+      "name": "virtualized-list",
+      "type": "registry:block",
+      "title": "Virtualized List",
+      "description": "Virtualized scrolling container using @tanstack/react-virtual",
+      "registryDependencies": ["@masan-group/utils"],
+      "files": [
+        {
+          "path": "registry/new-york/virtualized-list/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/virtualized-list/index.ts"
+        },
+        {
+          "path": "registry/new-york/virtualized-list/virtualized-container.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/virtualized-list/virtualized-container.tsx"
+        }
+      ],
+      "dependencies": ["@tanstack/react-virtual"]
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:block",
+      "title": "Multi Select",
+      "description": "Multi-select with search, virtualization, infinite scroll, and animations",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/shared-ui-types",
+        "@masan-group/button",
+        "@masan-group/badge",
+        "@masan-group/separator",
+        "@masan-group/command",
+        "@masan-group/popover",
+        "@masan-group/long-text",
+        "@masan-group/use-controlled-state",
+        "@masan-group/use-infinite-scroll",
+        "@masan-group/use-intersection-observer"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/multi-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/multi-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/multi-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/multi-select/index.ts"
+        }
+      ],
+      "dependencies": ["@tanstack/react-virtual", "class-variance-authority", "lucide-react"]
+    },
+    {
+      "name": "async-select",
+      "type": "registry:block",
+      "title": "Async Select",
+      "description": "Searchable select with async data loading and virtualization",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/command",
+        "@masan-group/popover",
+        "@masan-group/long-text",
+        "@masan-group/async-wrapper",
+        "@masan-group/use-controlled-state"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/async-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/async-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-select/index.ts"
+        }
+      ],
+      "dependencies": ["@tanstack/react-virtual", "lucide-react"]
+    },
+    {
+      "name": "async-wrapper",
+      "type": "registry:block",
+      "title": "Async Wrapper",
+      "description": "Wrapper for async loading states",
+      "registryDependencies": ["@masan-group/utils", "@masan-group/skeleton"],
+      "files": [
+        {
+          "path": "registry/new-york/async-wrapper/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-wrapper/component.tsx"
+        },
+        {
+          "path": "registry/new-york/async-wrapper/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/async-wrapper/index.ts"
+        }
+      ],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "filter-panel",
+      "type": "registry:block",
+      "title": "Filter Panel",
+      "description": "Composable filter panel with tabs, selects, date pickers, and advanced filters",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/badge",
+        "@masan-group/card",
+        "@masan-group/tabs",
+        "@masan-group/async-select",
+        "@masan-group/multi-select",
+        "@masan-group/date-picker",
+        "@masan-group/tree-select"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/filter-panel/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel/component.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel/index.ts"
+        }
+      ],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "filter-panel-v2",
+      "type": "registry:block",
+      "title": "Filter Panel V2",
+      "description": "Filter panel v2 with template management, sticky header, and advanced filter groups",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/lib-dexie",
+        "@masan-group/button",
+        "@masan-group/badge",
+        "@masan-group/card",
+        "@masan-group/tabs",
+        "@masan-group/input",
+        "@masan-group/label",
+        "@masan-group/popover",
+        "@masan-group/alert-dialog",
+        "@masan-group/async-select",
+        "@masan-group/multi-select",
+        "@masan-group/date-picker",
+        "@masan-group/tree-select"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/filter-panel-v2/components/delete-template-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/delete-template-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/components/filter-field.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/filter-field.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/components/rename-template-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/rename-template-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/components/save-template-dialog.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/save-template-dialog.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/components/template-chip.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/components/template-chip.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/filter-panel.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/filter-panel.tsx"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/hooks/use-persistent-filter-template.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/hooks/use-persistent-filter-template.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/hooks/use-sticky-observer.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/hooks/use-sticky-observer.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/hooks/use-template-manager.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/hooks/use-template-manager.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/i18n.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/i18n.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/index.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/types.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/types.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/utils/filter-value.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/utils/filter-value.ts"
+        },
+        {
+          "path": "registry/new-york/filter-panel-v2/utils/grid.ts",
+          "type": "registry:component",
+          "target": "src/components/features/filter-panel-v2/utils/grid.ts"
+        }
+      ],
+      "dependencies": ["lucide-react", "sonner"]
+    },
+    {
+      "name": "custom-select",
+      "type": "registry:block",
+      "title": "Select (Custom)",
+      "description": "Custom select component with controlled state",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/command",
+        "@masan-group/popover",
+        "@masan-group/use-controlled-state"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/custom-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/custom-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/custom-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/custom-select/index.ts"
+        }
+      ],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "segmented-control",
+      "type": "registry:block",
+      "title": "Segmented Control",
+      "description": "Segmented control built on top of Tabs",
+      "registryDependencies": ["@masan-group/utils", "@masan-group/tabs"],
+      "files": [
+        {
+          "path": "registry/new-york/segmented-control/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/segmented-control/component.tsx"
+        },
+        {
+          "path": "registry/new-york/segmented-control/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/segmented-control/index.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "number-input",
+      "type": "registry:block",
+      "title": "Number Input",
+      "description": "Numeric input with increment/decrement controls",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/input",
+        "@masan-group/button",
+        "@masan-group/use-controlled-state"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/number-input/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/number-input/component.tsx"
+        },
+        {
+          "path": "registry/new-york/number-input/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/number-input/index.ts"
+        }
+      ],
+      "dependencies": ["react-number-format"]
+    },
+    {
+      "name": "input-tags",
+      "type": "registry:block",
+      "title": "Input Tags",
+      "description": "Tag input component with add/remove functionality",
+      "registryDependencies": ["@masan-group/utils", "@masan-group/input", "@masan-group/badge"],
+      "files": [
+        {
+          "path": "registry/new-york/input-tags/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/input-tags/component.tsx"
+        },
+        {
+          "path": "registry/new-york/input-tags/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/input-tags/index.ts"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-icons"]
+    },
+    {
+      "name": "click-to-edit",
+      "type": "registry:block",
+      "title": "Click To Edit",
+      "description": "Inline-editable wrapper with status variants, sizes, and keyboard support",
+      "registryDependencies": ["@masan-group/utils"],
+      "files": [
+        {
+          "path": "registry/new-york/click-to-edit/click-to-edit-variants.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/click-to-edit/click-to-edit-variants.ts"
+        },
+        {
+          "path": "registry/new-york/click-to-edit/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/click-to-edit/component.tsx"
+        },
+        {
+          "path": "registry/new-york/click-to-edit/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/click-to-edit/index.ts"
+        }
+      ],
+      "dependencies": ["class-variance-authority", "lucide-react"]
+    },
+    {
+      "name": "copy-button",
+      "type": "registry:block",
+      "title": "Copy Button",
+      "description": "Button that copies text to clipboard",
+      "registryDependencies": ["@masan-group/utils", "@masan-group/button", "@masan-group/tooltip"],
+      "files": [
+        {
+          "path": "registry/new-york/copy-button/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/copy-button/component.tsx"
+        },
+        {
+          "path": "registry/new-york/copy-button/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/copy-button/index.ts"
+        }
+      ],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "long-text",
+      "type": "registry:block",
+      "title": "Long Text",
+      "description": "Truncated text with popover/tooltip for full content",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/popover",
+        "@masan-group/tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/long-text/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/long-text/component.tsx"
+        },
+        {
+          "path": "registry/new-york/long-text/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/long-text/index.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "use-badge-variant",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-badge-variant/use-badge-variant.tsx",
+          "type": "registry:hook",
+          "target": "src/hooks/use-badge-variant.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react"],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-controlled-state",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-controlled-state/use-controlled-state.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-controlled-state.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-debounce-callback",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-debounce-callback/use-debounce-callback.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-debounce-callback.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-debounced-value",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-debounced-value/use-debounced-value.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-debounced-value.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-full-height-table",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-full-height-table/use-full-height-table.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-full-height-table.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-infinite-scroll",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-infinite-scroll/use-infinite-scroll.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-infinite-scroll.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": ["@masan-group/use-intersection-observer"]
+    },
+    {
+      "name": "use-intersection-observer",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-intersection-observer/use-intersection-observer.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-intersection-observer.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-mobile/use-mobile.tsx",
+          "type": "registry:hook",
+          "target": "src/hooks/use-mobile.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-reduced-motion",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-reduced-motion/use-reduced-motion.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-reduced-motion.ts"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-table-local-state",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-table-local-state/use-table-local-state.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-table-local-state.ts"
+        }
+      ],
+      "dependencies": ["@tanstack/react-table"],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-table-url-state",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-table-url-state/use-table-url-state.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-table-url-state.ts"
+        }
+      ],
+      "dependencies": ["@tanstack/react-table"],
+      "registryDependencies": []
+    },
+    {
+      "name": "use-watch-field",
+      "type": "registry:hook",
+      "files": [
+        {
+          "path": "registry/new-york/use-watch-field/use-watch-field.ts",
+          "type": "registry:hook",
+          "target": "src/hooks/use-watch-field.ts"
+        }
+      ],
+      "dependencies": ["react-hook-form"],
+      "registryDependencies": []
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utility Functions",
+      "description": "cn() utility (clsx + tailwind-merge)",
+      "files": [
+        {
+          "path": "registry/new-york/utils/utils.ts",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ],
+      "dependencies": ["clsx", "tailwind-merge"]
+    },
+    {
+      "name": "chart-colors",
+      "type": "registry:lib",
+      "title": "Chart Colors",
+      "description": "Chart color constants and utilities",
+      "files": [
+        {
+          "path": "registry/new-york/chart-colors/chart-colors.ts",
+          "type": "registry:lib",
+          "target": "components/features/charts/utils/chart-colors.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "shared-ui-types",
+      "type": "registry:block",
+      "title": "Shared Types",
+      "description": "Shared type definitions used across components",
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-types/date.ts",
+          "type": "registry:lib",
+          "target": "src/types/date.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-types/screen.ts",
+          "type": "registry:lib",
+          "target": "src/types/screen.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-types/uom.ts",
+          "type": "registry:lib",
+          "target": "src/types/uom.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "screen-types",
+      "type": "registry:lib",
+      "title": "Screen Types",
+      "description": "ScreenSize type",
+      "files": [
+        {
+          "path": "registry/new-york/screen-types/screen.ts",
+          "type": "registry:lib",
+          "target": "types/screen.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "modal-provider",
+      "type": "registry:block",
+      "title": "Modal Provider",
+      "description": "Context provider for programmatic modal management",
+      "registryDependencies": ["@masan-group/utils", "@masan-group/modals"],
+      "files": [
+        {
+          "path": "registry/new-york/modal-provider/dexie-context.tsx",
+          "type": "registry:lib",
+          "target": "src/context/dexie-context.tsx"
+        },
+        {
+          "path": "registry/new-york/modal-provider/font-provider.tsx",
+          "type": "registry:lib",
+          "target": "src/context/font-provider.tsx"
+        },
+        {
+          "path": "registry/new-york/modal-provider/index.ts",
+          "type": "registry:lib",
+          "target": "src/context/index.ts"
+        },
+        {
+          "path": "registry/new-york/modal-provider/layout-settings-provider.tsx",
+          "type": "registry:lib",
+          "target": "src/context/layout-settings-provider.tsx"
+        },
+        {
+          "path": "registry/new-york/modal-provider/modal-provider/context.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/context.ts"
+        },
+        {
+          "path": "registry/new-york/modal-provider/modal-provider/index.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/index.ts"
+        },
+        {
+          "path": "registry/new-york/modal-provider/modal-provider/modals.tsx",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/modals.tsx"
+        },
+        {
+          "path": "registry/new-york/modal-provider/modal-provider/type.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/type.ts"
+        },
+        {
+          "path": "registry/new-york/modal-provider/modal-provider/useModals.ts",
+          "type": "registry:lib",
+          "target": "src/context/modal-provider/useModals.ts"
+        },
+        {
+          "path": "registry/new-york/modal-provider/theme-provider.tsx",
+          "type": "registry:lib",
+          "target": "src/context/theme-provider.tsx"
+        }
+      ],
+      "dependencies": ["dexie"]
+    },
+    {
+      "name": "shared-ui-styles",
+      "type": "registry:block",
+      "title": "Global Styles",
+      "description": "Shared global CSS styles",
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-styles/globals-raw.css",
+          "type": "registry:style"
+        },
+        {
+          "path": "registry/new-york/shared-ui-styles/globals.css",
+          "type": "registry:style",
+          "target": "src/styles/globals.css"
+        }
+      ],
+      "dependencies": ["@fontsource-variable/inter", "shadcn", "tailwindcss", "tw-animate-css"]
+    },
+    {
+      "name": "shared-ui-utils",
+      "type": "registry:block",
+      "title": "Shared Utilities",
+      "description": "Data, date, number, array, object, and string utilities",
+      "files": [
+        {
+          "path": "registry/new-york/shared-ui-utils/array.ts",
+          "type": "registry:lib",
+          "target": "src/utils/array.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/async.ts",
+          "type": "registry:lib",
+          "target": "src/utils/async.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/chart-colors.ts",
+          "type": "registry:lib",
+          "target": "src/utils/chart-colors.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/data.ts",
+          "type": "registry:lib",
+          "target": "src/utils/data.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/date-formatting.ts",
+          "type": "registry:lib",
+          "target": "src/utils/date-formatting.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/date.ts",
+          "type": "registry:lib",
+          "target": "src/utils/date.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/index.ts",
+          "type": "registry:lib",
+          "target": "src/utils/index.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/is.ts",
+          "type": "registry:lib",
+          "target": "src/utils/is.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/number-formatting.ts",
+          "type": "registry:lib",
+          "target": "src/utils/number-formatting.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/number.ts",
+          "type": "registry:lib",
+          "target": "src/utils/number.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/object.ts",
+          "type": "registry:lib",
+          "target": "src/utils/object.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/promotion-colors.ts",
+          "type": "registry:lib",
+          "target": "src/utils/promotion-colors.ts"
+        },
+        {
+          "path": "registry/new-york/shared-ui-utils/string.ts",
+          "type": "registry:lib",
+          "target": "src/utils/string.ts"
+        }
+      ],
+      "dependencies": ["date-fns"]
+    },
+    {
+      "name": "domain-map",
+      "type": "registry:block",
+      "title": "Map Components",
+      "description": "Map, cluster layer, and animated POS marker (domain-specific)",
+      "registryDependencies": ["@masan-group/utils"],
+      "files": [
+        {
+          "path": "registry/new-york/domain-map/animated-pos-marker.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/map/animated-pos-marker.tsx"
+        },
+        {
+          "path": "registry/new-york/domain-map/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/map/index.ts"
+        },
+        {
+          "path": "registry/new-york/domain-map/map-cluster-layer.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/map/map-cluster-layer.tsx"
+        },
+        {
+          "path": "registry/new-york/domain-map/map.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/map/map.tsx"
+        }
+      ],
+      "dependencies": ["lucide-react", "maplibre-gl", "next-themes"]
+    },
+    {
+      "name": "ml-chart-loading",
+      "type": "registry:block",
+      "title": "ML Chart Loading",
+      "description": "Loading state for ML charts",
+      "registryDependencies": ["@masan-group/utils"],
+      "files": [
+        {
+          "path": "registry/new-york/ml-chart-loading/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/ml-chart-loading/component.tsx"
+        },
+        {
+          "path": "registry/new-york/ml-chart-loading/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/ml-chart-loading/index.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "brand",
+      "type": "registry:block",
+      "title": "Brand",
+      "description": "Brand assets: global loading, Masan logo",
+      "registryDependencies": ["@masan-group/utils"],
+      "files": [
+        {
+          "path": "registry/new-york/brand/global-loading.tsx",
+          "type": "registry:component",
+          "target": "src/components/brand/global-loading.tsx"
+        },
+        {
+          "path": "registry/new-york/brand/index.ts",
+          "type": "registry:component",
+          "target": "src/components/brand/index.ts"
+        },
+        {
+          "path": "registry/new-york/brand/masan-logo.tsx",
+          "type": "registry:component",
+          "target": "src/components/brand/masan-logo.tsx"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "selected-badge-node",
+      "type": "registry:block",
+      "title": "Selected Badge Node",
+      "description": "Selected item badge with optional icon and remove action",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/badge",
+        "@masan-group/long-text"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/selected-badge-node/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/selected-badge-node/component.tsx"
+        },
+        {
+          "path": "registry/new-york/selected-badge-node/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/selected-badge-node/index.ts"
+        }
+      ],
+      "dependencies": ["lucide-react"]
+    },
+    {
+      "name": "lib-dexie",
+      "type": "registry:block",
+      "title": "Dexie Lib",
+      "description": "Typed Dexie wrapper with factory, hooks, and live-query helper",
+      "dependencies": ["dexie", "dexie-react-hooks"],
+      "files": [
+        {
+          "path": "registry/new-york/lib-dexie/dexie.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/dexie.ts"
+        },
+        {
+          "path": "registry/new-york/lib-dexie/hooks/use-dexie-pagination.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/hooks/use-dexie-pagination.ts"
+        },
+        {
+          "path": "registry/new-york/lib-dexie/hooks/use-dexie-table.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/hooks/use-dexie-table.ts"
+        },
+        {
+          "path": "registry/new-york/lib-dexie/hooks/use-live-query.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/hooks/use-live-query.ts"
+        },
+        {
+          "path": "registry/new-york/lib-dexie/index.ts",
+          "type": "registry:lib",
+          "target": "src/lib/dexie/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "suppress-scroll-on-focus",
+      "type": "registry:lib",
+      "title": "Suppress Scroll On Focus",
+      "description": "Temporarily prevents scroll caused by focus/scrollIntoView",
+      "files": [
+        {
+          "path": "registry/new-york/suppress-scroll-on-focus/suppress-scroll-on-focus.ts",
+          "type": "registry:lib",
+          "target": "lib/suppress-scroll-on-focus.ts"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "date-picker-v2",
+      "type": "registry:block",
+      "title": "Date Picker V2",
+      "description": "Enhanced date picker with CalendarV2, single and range modes, optional apply button",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/button",
+        "@masan-group/calendar",
+        "@masan-group/popover",
+        "@masan-group/use-controlled-state"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/date-picker-v2/date-picker-v2.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker-v2/date-picker-v2.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker-v2/date-range-picker-v2.tsx",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker-v2/date-range-picker-v2.tsx"
+        },
+        {
+          "path": "registry/new-york/date-picker-v2/index.ts",
+          "type": "registry:component",
+          "target": "src/components/features/date-picker-v2/index.ts"
+        }
+      ],
+      "dependencies": ["date-fns", "lucide-react"]
+    },
+    {
+      "name": "layout",
+      "type": "registry:block",
+      "title": "Layout System",
+      "description": "Complete sidebar layout with nav, header, config drawer, theme switch. Router-agnostic.",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/sidebar",
+        "@masan-group/avatar",
+        "@masan-group/badge",
+        "@masan-group/breadcrumb",
+        "@masan-group/button",
+        "@masan-group/collapsible",
+        "@masan-group/dropdown-menu",
+        "@masan-group/separator",
+        "@masan-group/sheet",
+        "@masan-group/slider",
+        "@masan-group/tooltip",
+        "@masan-group/long-text",
+        "@masan-group/shared-ui-context"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/layout/app-header.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/app-header.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/app-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/app-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/app-title.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/app-title.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-layout-compact.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-layout-compact.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-layout-default.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-layout-default.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-layout-full.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-layout-full.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-sidebar-floating.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-sidebar-floating.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-sidebar-inset.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-sidebar-inset.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-sidebar-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-sidebar-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-theme-dark.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-theme-dark.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-theme-light.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-theme-light.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/icon-theme-system.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/icon-theme-system.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer-icons/index.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer-icons/index.ts"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer/config-drawer-font-size.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-font-size.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer/config-drawer-layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-layout.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer/config-drawer-shared.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-shared.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer/config-drawer-sidebar.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer/config-drawer-theme.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/config-drawer-theme.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/config-drawer/index.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/config-drawer/index.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/header.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/header.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/index.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/index.ts"
+        },
+        {
+          "path": "registry/new-york/layout/layout-context.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/layout-context.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/layout.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/layout.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/main.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/main.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/nav-group.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-group.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/nav-item-renderer.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-item-renderer.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/nav-user.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-user.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/nav-utils.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/nav-utils.ts"
+        },
+        {
+          "path": "registry/new-york/layout/theme-switch.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/theme-switch.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/top-nav.tsx",
+          "type": "registry:component",
+          "target": "src/components/layout/top-nav.tsx"
+        },
+        {
+          "path": "registry/new-york/layout/types.ts",
+          "type": "registry:component",
+          "target": "src/components/layout/types.ts"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-radio-group", "lucide-react"]
+    },
+    {
+      "name": "tree-select",
+      "type": "registry:block",
+      "title": "Tree Select",
+      "description": "Hierarchical select with search, async loading, and optional virtualization",
+      "registryDependencies": [
+        "@masan-group/utils",
+        "@masan-group/screen-types",
+        "@masan-group/button",
+        "@masan-group/badge",
+        "@masan-group/separator",
+        "@masan-group/command",
+        "@masan-group/popover",
+        "@masan-group/long-text",
+        "@masan-group/selected-badge-node",
+        "@masan-group/suppress-scroll-on-focus",
+        "@masan-group/use-controlled-state",
+        "@masan-group/use-infinite-scroll",
+        "@masan-group/use-intersection-observer",
+        "@masan-group/use-debounced-value"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/tree-select/component.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/component.tsx"
+        },
+        {
+          "path": "registry/new-york/tree-select/hooks/use-get-screen-size.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/hooks/use-get-screen-size.ts"
+        },
+        {
+          "path": "registry/new-york/tree-select/hooks/use-tree-select-logic.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/hooks/use-tree-select-logic.ts"
+        },
+        {
+          "path": "registry/new-york/tree-select/hooks/use-tree-select-virtualize.tsx",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/hooks/use-tree-select-virtualize.tsx"
+        },
+        {
+          "path": "registry/new-york/tree-select/index.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/index.ts"
+        },
+        {
+          "path": "registry/new-york/tree-select/types.ts",
+          "type": "registry:component",
+          "target": "src/components/patterns/tree-select/types.ts"
+        }
+      ],
+      "dependencies": ["@tanstack/react-virtual", "class-variance-authority", "lucide-react"]
+    }
+  ]
+}

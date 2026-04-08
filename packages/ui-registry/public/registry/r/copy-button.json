@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "copy-button",
+  "title": "Copy Button",
+  "description": "Button that copies text to clipboard",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@masan-group/utils", "@masan-group/button", "@masan-group/tooltip"],
+  "files": [
+    {
+      "path": "registry/new-york/copy-button/component.tsx",
+      "content": "import { type ComponentProps, type MouseEvent, type ReactNode, useState } from 'react';\nimport { CopyCheckIcon, CopyIcon } from 'lucide-react';\n\nimport { Button } from '../../ui/actions/button';\n\ntype ButtonProps = ComponentProps<typeof Button>;\n\ninterface CopyButtonProps extends Omit<ButtonProps, 'children' | 'onClick' | 'type'> {\n  value: string;\n  disabled?: boolean;\n  iconSize?: number;\n  children?: (props: {\n    copied: boolean;\n    iconSize: number;\n    onClick: ButtonProps['onClick'];\n  }) => ReactNode;\n  onClick?: ButtonProps['onClick'];\n}\n\nasync function copyToClipboard(text: string) {\n  if (typeof navigator !== 'undefined' && navigator.clipboard?.writeText) {\n    await navigator.clipboard.writeText(text);\n    return;\n  }\n\n  if (typeof document !== 'undefined') {\n    const textarea = document.createElement('textarea');\n    textarea.value = text;\n    textarea.setAttribute('readonly', '');\n    textarea.style.position = 'absolute';\n    textarea.style.left = '-9999px';\n    document.body.appendChild(textarea);\n    textarea.select();\n    document.execCommand('copy');\n    document.body.removeChild(textarea);\n    return;\n  }\n\n  throw new Error('Clipboard API is not available.');\n}\n\nexport function CopyButton({\n  value,\n  disabled,\n  iconSize = 16,\n  children,\n  onClick,\n  ...buttonProps\n}: CopyButtonProps) {\n  const [copied, setCopied] = useState(false);\n\n  const handleClick = async (event: MouseEvent<HTMLButtonElement>) => {\n    if (disabled) {\n      return;\n    }\n\n    onClick?.(event);\n\n    if (event.defaultPrevented) {\n      return;\n    }\n\n    try {\n      await copyToClipboard(value);\n      setCopied(true);\n      setTimeout(() => setCopied(false), 2000);\n    } catch (error) {\n      console.error('Failed to copy to clipboard', error);\n    }\n  };\n\n  if (typeof children === 'function') {\n    return children({ copied, iconSize, onClick: handleClick as ButtonProps['onClick'] });\n  }\n\n  if (!value) return null;\n\n  return (\n    <Button\n      type=\"button\"\n      disabled={disabled}\n      onClick={handleClick}\n      variant=\"ghost\"\n      size=\"xs\"\n      {...buttonProps}\n    >\n      {copied ? (\n        <CopyCheckIcon className=\"text-green-600 dark:text-green-400\" size={iconSize} />\n      ) : (\n        <CopyIcon size={iconSize} />\n      )}\n    </Button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/copy-button/component.tsx"
+    },
+    {
+      "path": "registry/new-york/copy-button/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/copy-button/index.ts"
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "popover",
+  "dependencies": ["@base-ui/react"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/popover/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/overlays/popover/index.ts"
+    },
+    {
+      "path": "registry/new-york/popover/component.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { Popover as PopoverPrimitive } from '@base-ui/react/popover';\nimport { cn } from '../../../../lib/utils';\n\nfunction Popover({ ...props }: React.ComponentProps<typeof PopoverPrimitive.Root>) {\n  return <PopoverPrimitive.Root data-slot=\"popover\" {...props} />;\n}\n\nconst PopoverTrigger = React.forwardRef<HTMLButtonElement, PopoverPrimitive.Trigger.Props>(\n  function PopoverTrigger(props, ref) {\n    return <PopoverPrimitive.Trigger ref={ref} data-slot=\"popover-trigger\" {...props} />;\n  }\n);\n\nconst PopoverContent = React.forwardRef<\n  React.ComponentRef<typeof PopoverPrimitive.Popup>,\n  PopoverPrimitive.Popup.Props &\n    Pick<PopoverPrimitive.Positioner.Props, 'align' | 'alignOffset' | 'side' | 'sideOffset'>\n>(function PopoverContent(\n  { className, align = 'center', alignOffset = 0, side = 'bottom', sideOffset = 4, ...props },\n  ref\n) {\n  return (\n    <PopoverPrimitive.Portal>\n      <PopoverPrimitive.Positioner\n        align={align}\n        alignOffset={alignOffset}\n        side={side}\n        sideOffset={sideOffset}\n        className=\"isolate z-50\"\n      >\n        <PopoverPrimitive.Popup\n          ref={ref}\n          data-slot=\"popover-content\"\n          className={cn(\n            'data-closed:fade-out-0 data-open:fade-in-0 data-closed:zoom-out-95 data-open:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=inline-end]:slide-in-from-left-2 z-50 flex w-72 origin-(--transform-origin) flex-col gap-2.5 rounded-lg bg-popover p-2.5 text-popover-foreground text-sm shadow-md outline-hidden ring-1 ring-foreground/10 duration-100 data-closed:animate-out data-open:animate-in',\n            className\n          )}\n          {...props}\n        />\n      </PopoverPrimitive.Positioner>\n    </PopoverPrimitive.Portal>\n  );\n});\n\nconst PopoverHeader = React.forwardRef<HTMLDivElement, React.ComponentProps<'div'>>(\n  function PopoverHeader({ className, ...props }, ref) {\n    return (\n      <div\n        ref={ref}\n        data-slot=\"popover-header\"\n        className={cn('flex flex-col gap-0.5 text-sm', className)}\n        {...props}\n      />\n    );\n  }\n);\n\nconst PopoverTitle = React.forwardRef<\n  React.ComponentRef<typeof PopoverPrimitive.Title>,\n  PopoverPrimitive.Title.Props\n>(function PopoverTitle({ className, ...props }, ref) {\n  return (\n    <PopoverPrimitive.Title\n      ref={ref}\n      data-slot=\"popover-title\"\n      className={cn('font-medium', className)}\n      {...props}\n    />\n  );\n});\n\nconst PopoverDescription = React.forwardRef<\n  React.ComponentRef<typeof PopoverPrimitive.Description>,\n  PopoverPrimitive.Description.Props\n>(function PopoverDescription({ className, ...props }, ref) {\n  return (\n    <PopoverPrimitive.Description\n      ref={ref}\n      data-slot=\"popover-description\"\n      className={cn('text-muted-foreground', className)}\n      {...props}\n    />\n  );\n});\n\nPopover.displayName = 'Popover';\nPopoverTrigger.displayName = 'PopoverTrigger';\nPopoverContent.displayName = 'PopoverContent';\nPopoverHeader.displayName = 'PopoverHeader';\nPopoverTitle.displayName = 'PopoverTitle';\nPopoverDescription.displayName = 'PopoverDescription';\n\nexport { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/overlays/popover/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

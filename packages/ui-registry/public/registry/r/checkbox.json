@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox",
+  "dependencies": ["@radix-ui/react-checkbox", "lucide-react"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/checkbox/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/forms/checkbox/index.ts"
+    },
+    {
+      "path": "registry/new-york/checkbox/component.tsx",
+      "content": "import * as CheckboxPrimitive from '@radix-ui/react-checkbox';\nimport { CheckIcon, MinusIcon } from 'lucide-react';\nimport * as React from 'react';\nimport { cn } from '../../../../lib/utils';\n\nconst Checkbox = React.forwardRef<\n  React.ComponentRef<typeof CheckboxPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>\n>(function Checkbox({ className, checked, ...props }, ref) {\n  return (\n    <CheckboxPrimitive.Root\n      ref={ref}\n      data-slot=\"checkbox\"\n      checked={checked}\n      className={cn(\n        'peer size-4 shrink-0 rounded-[4px] border border-primary shadow-xs outline-none transition-shadow focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 data-[state=checked]:border-primary data-[state=indeterminate]:border-primary data-[state=checked]:bg-primary data-[state=indeterminate]:bg-primary data-[state=checked]:text-primary-foreground data-[state=indeterminate]:text-primary-foreground dark:bg-input/30 dark:data-[state=checked]:bg-primary dark:data-[state=indeterminate]:bg-primary dark:aria-invalid:ring-destructive/40',\n        className\n      )}\n      {...props}\n    >\n      <CheckboxPrimitive.Indicator\n        data-slot=\"checkbox-indicator\"\n        className=\"flex items-center justify-center text-current transition-none\"\n      >\n        {checked === 'indeterminate' ? (\n          <MinusIcon className=\"size-3.5\" />\n        ) : (\n          <CheckIcon className=\"size-3.5\" />\n        )}\n      </CheckboxPrimitive.Indicator>\n    </CheckboxPrimitive.Root>\n  );\n});\n\nCheckbox.displayName = 'Checkbox';\n\nexport { Checkbox };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/forms/checkbox/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-debounced-value",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/use-debounced-value/use-debounced-value.ts",
+      "content": "import * as React from 'react';\n\nexport function useDebouncedValue<T>(value: T, delay: number): T {\n  const [debouncedValue, setDebouncedValue] = React.useState(value);\n\n  React.useEffect(() => {\n    const handle = setTimeout(() => {\n      setDebouncedValue(value);\n    }, delay);\n\n    return () => {\n      clearTimeout(handle);\n    };\n  }, [value, delay]);\n\n  return debouncedValue;\n}\n",
+      "type": "registry:hook",
+      "target": "src/hooks/use-debounced-value.ts"
+    }
+  ],
+  "type": "registry:hook"
+}

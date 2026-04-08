@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "number-input",
+  "title": "Number Input",
+  "description": "Numeric input with increment/decrement controls",
+  "dependencies": ["react-number-format"],
+  "registryDependencies": [
+    "@masan-group/utils",
+    "@masan-group/input",
+    "@masan-group/button",
+    "@masan-group/use-controlled-state"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/number-input/component.tsx",
+      "content": "import { forwardRef } from 'react';\nimport { NumericFormat, type NumericFormatProps } from 'react-number-format';\nimport { Input } from '../../ui/forms/input';\nimport { useControlledState } from '../../../hooks/use-controlled-state';\nimport { toNumber } from '../../../utils/number';\n\nexport interface NumberInputProps\n  extends Omit<\n    NumericFormatProps,\n    'value' | 'onValueChange' | 'customInput' | 'getInputRef' | 'onChange'\n  > {\n  stepper?: number;\n  thousandSeparator?: string | boolean;\n  placeholder?: string;\n  defaultValue?: number;\n  min?: number;\n  max?: number;\n  value?: number | string; // Controlled value\n  onChange?: (value: number | string | undefined) => void;\n  /*\n  if allowDecimal is true, it will allow decimal places\n  if allowDecimal is not provided (undefined), it will be false\n  */\n  allowDecimal?: boolean;\n  suffixIcon?: React.ReactNode;\n  prefixIcon?: React.ReactNode;\n}\n\nexport const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(\n  (\n    {\n      defaultValue: defaultValueProp,\n      min = Number.NEGATIVE_INFINITY,\n      max = Number.POSITIVE_INFINITY,\n      onChange: onChangeProp,\n      fixedDecimalScale,\n      decimalScale,\n      value: valueProp,\n      thousandSeparator = ',',\n      allowDecimal = false,\n      ...props\n    },\n    ref\n  ) => {\n    // const [value, onChange] = useState<number | undefined>(valueProp ?? 0);\n    const [value, onChange] = useControlledState<number | string | undefined>({\n      value: valueProp ? toNumber(valueProp) : undefined,\n      defaultValue: defaultValueProp,\n      onChange: onChangeProp,\n    });\n\n    const handleChange = (values: { value: string; floatValue: number | undefined }) => {\n      const newValue = values.floatValue === undefined ? '' : values.floatValue;\n      onChange(newValue);\n    };\n\n    const handleBlur = () => {\n      if (value !== undefined) {\n        if (toNumber(value) < min) {\n          onChange(min);\n          (ref as React.RefObject<HTMLInputElement>).current!.value = String(min);\n        } else if (toNumber(value) > max) {\n          onChange(max);\n          (ref as React.RefObject<HTMLInputElement>).current!.value = String(max);\n        }\n      }\n    };\n\n    return (\n      <NumericFormat\n        allowNegative={min < 0}\n        max={max}\n        min={min}\n        customInput={Input}\n        getInputRef={ref}\n        {...props}\n        thousandSeparator={thousandSeparator}\n        decimalScale={allowDecimal ? decimalScale : 0}\n        value={toNumber(value)}\n        onValueChange={handleChange}\n        onBlur={handleBlur}\n      />\n    );\n  }\n);\n\nNumberInput.displayName = 'NumberInput';\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/number-input/component.tsx"
+    },
+    {
+      "path": "registry/new-york/number-input/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/number-input/index.ts"
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "async-wrapper",
+  "title": "Async Wrapper",
+  "description": "Wrapper for async loading states",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@masan-group/utils", "@masan-group/skeleton"],
+  "files": [
+    {
+      "path": "registry/new-york/async-wrapper/component.tsx",
+      "content": "import { Inbox, Loader2 } from 'lucide-react';\nimport type { ReactNode } from 'react';\nimport { EmptyState } from '../../ui/feedback/empty-state';\n\ninterface AsyncWrapperProps {\n  loading?: boolean;\n  empty?: boolean;\n  error?: boolean;\n  loadingComponent?: ReactNode;\n  emptyComponent?: ReactNode;\n  errorComponent?: ReactNode;\n  emptyText?: string;\n  loadingText?: string;\n  errorText?: string;\n  hideEmpty?: boolean;\n  hideError?: boolean;\n  children: ReactNode;\n}\n\nexport const DefaultLoadingComponent = ({ loadingText }: { loadingText?: string }) => (\n  <div className=\"flex items-center justify-center gap-2 py-6 text-sm\">\n    <Loader2 className=\"h-4 w-4 animate-spin\" />\n    <span className=\"text-muted-foreground\">{loadingText ?? 'Loading...'} </span>\n  </div>\n);\n\nexport const DefaultEmptyComponent = ({ emptyText }: { emptyText?: string }) => (\n  <div className=\"flex flex-col items-center justify-center gap-2 py-6\">\n    <Inbox className=\"h-8 w-8 text-muted-foreground\" />\n    <span className=\"text-muted-foreground\">{emptyText ?? 'No results.'}</span>\n  </div>\n);\n\nexport const DefaultErrorComponent = ({ errorText }: { errorText?: string }) => (\n  <EmptyState variant=\"error\" description={errorText} />\n);\n\nexport function AsyncWrapper({\n  loading = false,\n  empty = false,\n  error = false,\n  loadingComponent,\n  emptyComponent,\n  errorComponent,\n  emptyText,\n  loadingText,\n  errorText,\n  hideEmpty = false,\n  hideError = false,\n  children,\n}: AsyncWrapperProps) {\n  // 1. Loading - highest priority\n  if (loading) {\n    return loadingComponent ?? <DefaultLoadingComponent loadingText={loadingText} />;\n  }\n\n  // 2. Error - second priority (after loading complete)\n  if (error) {\n    if (hideError) return null;\n    return errorComponent ?? <DefaultErrorComponent errorText={errorText} />;\n  }\n\n  // 3. Empty - third priority\n  if (empty) {\n    if (hideEmpty) return null;\n    return emptyComponent ?? <DefaultEmptyComponent emptyText={emptyText} />;\n  }\n\n  // 4. Children - default\n  return children;\n}\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/async-wrapper/component.tsx"
+    },
+    {
+      "path": "registry/new-york/async-wrapper/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/async-wrapper/index.ts"
+    }
+  ],
+  "type": "registry:block"
+}

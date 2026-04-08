@@ -1,0 +1,14 @@
+{
+  "name": "@masan-group/ui-registry",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "registry:build": "node ./scripts/build-registries.mjs --namespace registry",
+    "registry:build:unified": "node ./scripts/build-registries.mjs --namespace registry",
+    "registry:clean": "node ./scripts/clean-registries.mjs"
+  },
+  "devDependencies": {
+    "shadcn": "^3.6.2"
+  }
+}

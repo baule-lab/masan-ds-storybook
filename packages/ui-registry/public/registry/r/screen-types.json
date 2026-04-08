@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "screen-types",
+  "title": "Screen Types",
+  "description": "ScreenSize type",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/screen-types/screen.ts",
+      "content": "export type ScreenSize = 'mobile' | 'tablet' | 'desktop';\n",
+      "type": "registry:lib",
+      "target": "types/screen.ts"
+    }
+  ],
+  "type": "registry:lib"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "suppress-scroll-on-focus",
+  "title": "Suppress Scroll On Focus",
+  "description": "Temporarily prevents scroll caused by focus/scrollIntoView",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/suppress-scroll-on-focus/suppress-scroll-on-focus.ts",
+      "content": "export const suppressScrollOnFocus = (): void => {\n  const originalFocus = HTMLElement.prototype.focus;\n  const originalScrollIntoView = Element.prototype.scrollIntoView;\n\n  HTMLElement.prototype.focus = function (options?: FocusOptions) {\n    originalFocus.call(this, { ...options, preventScroll: true });\n  };\n\n  Element.prototype.scrollIntoView = () => {\n    return;\n  };\n\n  requestAnimationFrame(() => {\n    requestAnimationFrame(() => {\n      HTMLElement.prototype.focus = originalFocus;\n      Element.prototype.scrollIntoView = originalScrollIntoView;\n    });\n  });\n};\n",
+      "type": "registry:lib",
+      "target": "lib/suppress-scroll-on-focus.ts"
+    }
+  ],
+  "type": "registry:lib"
+}

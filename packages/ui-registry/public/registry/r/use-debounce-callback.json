@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-debounce-callback",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/use-debounce-callback/use-debounce-callback.ts",
+      "content": "import { useRef } from 'react';\n\n/**\n * Creates a debounced version of the provided callback that delays execution until\n * the user stops calling it for the specified delay.\n */\nexport function useDebounceCallback<T extends (...args: readonly any[]) => void>(\n  callback: T,\n  delay: number\n) {\n  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);\n\n  return (...args: Parameters<T>) => {\n    if (timeoutRef.current !== null) {\n      clearTimeout(timeoutRef.current);\n    }\n\n    timeoutRef.current = setTimeout(() => {\n      callback(...args);\n    }, delay);\n  };\n}\n",
+      "type": "registry:hook",
+      "target": "src/hooks/use-debounce-callback.ts"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group",
+  "dependencies": ["@radix-ui/react-radio-group", "lucide-react"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/radio-group/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/forms/radio-group/index.ts"
+    },
+    {
+      "path": "registry/new-york/radio-group/component.tsx",
+      "content": "import * as RadioGroupPrimitive from '@radix-ui/react-radio-group';\nimport { CircleIcon } from 'lucide-react';\nimport * as React from 'react';\nimport { cn } from '../../../../lib/utils';\n\nconst RadioGroup = React.forwardRef<\n  React.ComponentRef<typeof RadioGroupPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>\n>(function RadioGroup({ className, ...props }, ref) {\n  return (\n    <RadioGroupPrimitive.Root\n      ref={ref}\n      data-slot=\"radio-group\"\n      className={cn('grid gap-3', className)}\n      {...props}\n    />\n  );\n});\n\nconst RadioGroupItem = React.forwardRef<\n  React.ComponentRef<typeof RadioGroupPrimitive.Item>,\n  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>\n>(function RadioGroupItem({ className, ...props }, ref) {\n  return (\n    <RadioGroupPrimitive.Item\n      ref={ref}\n      data-slot=\"radio-group-item\"\n      className={cn(\n        'aspect-square size-4 shrink-0 rounded-full border border-input text-primary shadow-xs outline-none transition-[color,box-shadow] focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:bg-input/30 dark:aria-invalid:ring-destructive/40',\n        className\n      )}\n      {...props}\n    >\n      <RadioGroupPrimitive.Indicator\n        data-slot=\"radio-group-indicator\"\n        className=\"relative flex items-center justify-center\"\n      >\n        <CircleIcon className=\"absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2 fill-primary\" />\n      </RadioGroupPrimitive.Indicator>\n    </RadioGroupPrimitive.Item>\n  );\n});\n\nRadioGroup.displayName = 'RadioGroup';\nRadioGroupItem.displayName = 'RadioGroupItem';\n\nexport { RadioGroup, RadioGroupItem };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/forms/radio-group/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

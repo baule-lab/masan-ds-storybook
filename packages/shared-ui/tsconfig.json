@@ -1,0 +1,9 @@
+{
+  "extends": "@masan-group/typescript-config/react-library.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": [".", "src/**/*", "src/types.d.ts", "src/types/svg.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

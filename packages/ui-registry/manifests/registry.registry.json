@@ -1,0 +1,546 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "nomianlabs",
+  "homepage": "https://github.com/masan-group/fe-boilerplate",
+  "items": [
+    {
+      "discoverIndividual": {
+        "dir": "../shared-ui/src/components/ui",
+        "fileType": "registry:ui",
+        "resolveInternalDeps": true,
+        "baseRegistryDependencies": ["utils"]
+      }
+    },
+    {
+      "name": "shared-ui-components",
+      "type": "registry:block",
+      "title": "Shared UI Components",
+      "description": "Bundled components folder from @masan-group/shared-ui.",
+      "registryDependencies": [
+        "shared-ui-lib",
+        "shared-ui-utils",
+        "shared-ui-hooks",
+        "shared-ui-context",
+        "shared-ui-styles",
+        "shared-ui-types"
+      ],
+      "discover": {
+        "dir": "../shared-ui/src/components",
+        "fileType": "registry:component"
+      }
+    },
+    {
+      "name": "shared-ui-hooks",
+      "type": "registry:block",
+      "title": "Shared UI Hooks",
+      "description": "Bundled hooks folder from @masan-group/shared-ui.",
+      "registryDependencies": ["shared-ui-lib", "shared-ui-utils"],
+      "discover": {
+        "dir": "../shared-ui/src/hooks",
+        "fileType": "registry:hook"
+      }
+    },
+    {
+      "name": "shared-ui-context",
+      "type": "registry:block",
+      "title": "Shared UI Context",
+      "description": "Bundled context folder from @masan-group/shared-ui.",
+      "registryDependencies": ["shared-ui-lib", "shared-ui-utils"],
+      "discover": {
+        "dir": "../shared-ui/src/context",
+        "fileType": "registry:lib"
+      }
+    },
+    {
+      "name": "shared-ui-lib",
+      "type": "registry:block",
+      "title": "Shared UI Lib",
+      "description": "Bundled lib folder from @masan-group/shared-ui.",
+      "discover": {
+        "dir": "../shared-ui/src/lib",
+        "fileType": "registry:lib"
+      }
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:block",
+      "title": "Date Picker",
+      "description": "Date picker with range, month, week, and year views",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/date-picker",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "button", "calendar", "popover", "tabs"]
+    },
+    {
+      "name": "modals",
+      "type": "registry:block",
+      "title": "Modal System",
+      "description": "Dialog, drawer, and confirm modal components with programmatic API",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/modals",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "button",
+        "dialog",
+        "alert-dialog",
+        "sheet",
+        "modal-provider"
+      ]
+    },
+    {
+      "name": "query-builder",
+      "type": "registry:block",
+      "title": "Query Builder",
+      "description": "Visual query builder with shadcn/ui styling",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/query-builder",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "button", "select", "input", "switch"]
+    },
+    {
+      "name": "skeletons",
+      "type": "registry:block",
+      "title": "Skeleton Components",
+      "description": "Pre-built skeleton loading states for common UI patterns",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/skeletons",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "skeleton", "card", "badge", "separator"]
+    },
+    {
+      "name": "charts",
+      "type": "registry:block",
+      "title": "Chart Utilities",
+      "description": "Chart wrapper, formatters, and theme utilities for Recharts",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/charts",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "chart-colors"]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:block",
+      "title": "Timeline",
+      "description": "Vertical timeline component with multiple layout variants",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/timeline",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "virtualized-list",
+      "type": "registry:block",
+      "title": "Virtualized List",
+      "description": "Virtualized scrolling container using @tanstack/react-virtual",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/virtualized-list",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:block",
+      "title": "Multi Select",
+      "description": "Multi-select with search, virtualization, infinite scroll, and animations",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/multi-select",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "shared-ui-types",
+        "button",
+        "badge",
+        "separator",
+        "command",
+        "popover",
+        "long-text",
+        "use-controlled-state",
+        "use-infinite-scroll",
+        "use-intersection-observer"
+      ]
+    },
+    {
+      "name": "async-select",
+      "type": "registry:block",
+      "title": "Async Select",
+      "description": "Searchable select with async data loading and virtualization",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/async-select",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "button",
+        "command",
+        "popover",
+        "long-text",
+        "async-wrapper",
+        "use-controlled-state"
+      ]
+    },
+    {
+      "name": "async-wrapper",
+      "type": "registry:block",
+      "title": "Async Wrapper",
+      "description": "Wrapper for async loading states",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/async-wrapper",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "skeleton"]
+    },
+    {
+      "name": "filter-panel",
+      "type": "registry:block",
+      "title": "Filter Panel",
+      "description": "Composable filter panel with tabs, selects, date pickers, and advanced filters",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/filter-panel",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "button",
+        "badge",
+        "card",
+        "tabs",
+        "async-select",
+        "multi-select",
+        "date-picker",
+        "tree-select"
+      ]
+    },
+    {
+      "name": "filter-panel-v2",
+      "type": "registry:block",
+      "title": "Filter Panel V2",
+      "description": "Filter panel v2 with template management, sticky header, and advanced filter groups",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/filter-panel-v2",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "lib-dexie",
+        "button",
+        "badge",
+        "card",
+        "tabs",
+        "input",
+        "label",
+        "popover",
+        "alert-dialog",
+        "async-select",
+        "multi-select",
+        "date-picker",
+        "tree-select"
+      ]
+    },
+    {
+      "name": "custom-select",
+      "type": "registry:block",
+      "title": "Select (Custom)",
+      "description": "Custom select component with controlled state",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/custom-select",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "button", "command", "popover", "use-controlled-state"]
+    },
+    {
+      "name": "segmented-control",
+      "type": "registry:block",
+      "title": "Segmented Control",
+      "description": "Segmented control built on top of Tabs",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/segmented-control",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "tabs"]
+    },
+    {
+      "name": "number-input",
+      "type": "registry:block",
+      "title": "Number Input",
+      "description": "Numeric input with increment/decrement controls",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/number-input",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "input", "button", "use-controlled-state"]
+    },
+    {
+      "name": "input-tags",
+      "type": "registry:block",
+      "title": "Input Tags",
+      "description": "Tag input component with add/remove functionality",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/input-tags",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "input", "badge"]
+    },
+    {
+      "name": "click-to-edit",
+      "type": "registry:block",
+      "title": "Click To Edit",
+      "description": "Inline-editable wrapper with status variants, sizes, and keyboard support",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/click-to-edit",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "copy-button",
+      "type": "registry:block",
+      "title": "Copy Button",
+      "description": "Button that copies text to clipboard",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/copy-button",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "button", "tooltip"]
+    },
+    {
+      "name": "long-text",
+      "type": "registry:block",
+      "title": "Long Text",
+      "description": "Truncated text with popover/tooltip for full content",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/long-text",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "popover", "tooltip"]
+    },
+    {
+      "discoverIndividual": {
+        "dir": "../shared-ui/src/hooks",
+        "fileType": "registry:hook",
+        "resolveInternalDeps": true,
+        "baseRegistryDependencies": []
+      }
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utility Functions",
+      "description": "cn() utility (clsx + tailwind-merge)",
+      "files": [
+        {
+          "path": "../shared-ui/src/lib/utils.ts",
+          "type": "registry:lib",
+          "target": "lib/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "chart-colors",
+      "type": "registry:lib",
+      "title": "Chart Colors",
+      "description": "Chart color constants and utilities",
+      "files": [
+        {
+          "path": "../shared-ui/src/components/features/charts/utils/chart-colors.ts",
+          "type": "registry:lib",
+          "target": "components/features/charts/utils/chart-colors.ts"
+        }
+      ]
+    },
+    {
+      "name": "shared-ui-types",
+      "type": "registry:block",
+      "title": "Shared Types",
+      "description": "Shared type definitions used across components",
+      "discover": {
+        "dir": "../shared-ui/src/types",
+        "fileType": "registry:lib"
+      }
+    },
+    {
+      "name": "screen-types",
+      "type": "registry:lib",
+      "title": "Screen Types",
+      "description": "ScreenSize type",
+      "files": [
+        {
+          "path": "../shared-ui/src/types/screen.ts",
+          "type": "registry:lib",
+          "target": "types/screen.ts"
+        }
+      ]
+    },
+    {
+      "name": "modal-provider",
+      "type": "registry:block",
+      "title": "Modal Provider",
+      "description": "Context provider for programmatic modal management",
+      "discover": {
+        "dir": "../shared-ui/src/context",
+        "fileType": "registry:lib"
+      },
+      "registryDependencies": ["utils", "modals"]
+    },
+    {
+      "name": "shared-ui-styles",
+      "type": "registry:block",
+      "title": "Global Styles",
+      "description": "Shared global CSS styles",
+      "discover": {
+        "dir": "../shared-ui/src/styles",
+        "fileType": "registry:file",
+        "target": { "globals.css": "src/styles/globals.css" }
+      }
+    },
+    {
+      "name": "shared-ui-utils",
+      "type": "registry:block",
+      "title": "Shared Utilities",
+      "description": "Data, date, number, array, object, and string utilities",
+      "discover": {
+        "dir": "../shared-ui/src/utils",
+        "fileType": "registry:lib"
+      }
+    },
+    {
+      "name": "domain-map",
+      "type": "registry:block",
+      "title": "Map Components",
+      "description": "Map, cluster layer, and animated POS marker (domain-specific)",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/map",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "ml-chart-loading",
+      "type": "registry:block",
+      "title": "ML Chart Loading",
+      "description": "Loading state for ML charts",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/ml-chart-loading",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "brand",
+      "type": "registry:block",
+      "title": "Brand",
+      "description": "Brand assets: global loading, Masan logo",
+      "discover": {
+        "dir": "../shared-ui/src/components/brand",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils"]
+    },
+    {
+      "name": "selected-badge-node",
+      "type": "registry:block",
+      "title": "Selected Badge Node",
+      "description": "Selected item badge with optional icon and remove action",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/selected-badge-node",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "badge", "long-text"]
+    },
+    {
+      "name": "lib-dexie",
+      "type": "registry:block",
+      "title": "Dexie Lib",
+      "description": "Typed Dexie wrapper with factory, hooks, and live-query helper",
+      "dependencies": ["dexie"],
+      "discover": {
+        "dir": "../shared-ui/src/lib/dexie",
+        "fileType": "registry:lib"
+      }
+    },
+    {
+      "name": "suppress-scroll-on-focus",
+      "type": "registry:lib",
+      "title": "Suppress Scroll On Focus",
+      "description": "Temporarily prevents scroll caused by focus/scrollIntoView",
+      "files": [
+        {
+          "path": "../shared-ui/src/lib/suppress-scroll-on-focus.ts",
+          "type": "registry:lib",
+          "target": "lib/suppress-scroll-on-focus.ts"
+        }
+      ]
+    },
+    {
+      "name": "date-picker-v2",
+      "type": "registry:block",
+      "title": "Date Picker V2",
+      "description": "Enhanced date picker with CalendarV2, single and range modes, optional apply button",
+      "discover": {
+        "dir": "../shared-ui/src/components/features/date-picker-v2",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": ["utils", "button", "calendar", "popover", "use-controlled-state"]
+    },
+    {
+      "name": "layout",
+      "type": "registry:block",
+      "title": "Layout System",
+      "description": "Complete sidebar layout with nav, header, config drawer, theme switch. Router-agnostic.",
+      "discover": {
+        "dir": "../shared-ui/src/components/layout",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "sidebar",
+        "avatar",
+        "badge",
+        "breadcrumb",
+        "button",
+        "collapsible",
+        "dropdown-menu",
+        "separator",
+        "sheet",
+        "slider",
+        "tooltip",
+        "long-text",
+        "shared-ui-context"
+      ]
+    },
+    {
+      "name": "tree-select",
+      "type": "registry:block",
+      "title": "Tree Select",
+      "description": "Hierarchical select with search, async loading, and optional virtualization",
+      "discover": {
+        "dir": "../shared-ui/src/components/patterns/tree-select",
+        "fileType": "registry:component"
+      },
+      "registryDependencies": [
+        "utils",
+        "screen-types",
+        "button",
+        "badge",
+        "separator",
+        "command",
+        "popover",
+        "long-text",
+        "selected-badge-node",
+        "suppress-scroll-on-focus",
+        "use-controlled-state",
+        "use-infinite-scroll",
+        "use-intersection-observer",
+        "use-debounced-value"
+      ]
+    }
+  ]
+}

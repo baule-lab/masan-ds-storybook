@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "separator",
+  "dependencies": ["@radix-ui/react-separator"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/separator/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/separator/index.ts"
+    },
+    {
+      "path": "registry/new-york/separator/component.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport * as SeparatorPrimitive from '@radix-ui/react-separator';\n\nimport { cn } from '../../../../lib/utils';\n\nconst Separator = React.forwardRef<\n  React.ComponentRef<typeof SeparatorPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>\n>(function Separator({ className, orientation = 'horizontal', decorative = true, ...props }, ref) {\n  return (\n    <SeparatorPrimitive.Root\n      ref={ref}\n      data-slot=\"separator\"\n      decorative={decorative}\n      orientation={orientation}\n      className={cn(\n        'shrink-0 bg-border data-[orientation=horizontal]:h-px data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px',\n        className\n      )}\n      {...props}\n    />\n  );\n});\n\nexport { Separator };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/separator/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,1 @@
+export { formatXAxisLabel } from './formatXAxisLabel';

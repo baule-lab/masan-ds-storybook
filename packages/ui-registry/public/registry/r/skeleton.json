@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "dependencies": [],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/skeleton/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/feedback/skeleton/index.ts"
+    },
+    {
+      "path": "registry/new-york/skeleton/component.tsx",
+      "content": "import { cn } from '../../../../lib/utils';\n\nfunction Skeleton({ className, ...props }: React.ComponentProps<'div'>) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn('animate-pulse rounded-md bg-muted', className)}\n      {...props}\n    />\n  );\n}\n\nexport { Skeleton };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/feedback/skeleton/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

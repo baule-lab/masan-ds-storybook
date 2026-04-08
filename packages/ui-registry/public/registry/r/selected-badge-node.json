@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "selected-badge-node",
+  "title": "Selected Badge Node",
+  "description": "Selected item badge with optional icon and remove action",
+  "dependencies": ["lucide-react"],
+  "registryDependencies": ["@masan-group/utils", "@masan-group/badge", "@masan-group/long-text"],
+  "files": [
+    {
+      "path": "registry/new-york/selected-badge-node/component.tsx",
+      "content": "import type * as React from 'react';\nimport type { CSSProperties } from 'react';\n\nimport { cn } from '../../../lib/utils';\nimport { Badge } from '../../ui/display/badge';\nimport { LongText } from '../long-text';\nimport { XCircle } from 'lucide-react';\n\n/**\n * Props for the `SelectedBadgeNode` component.\n * Represents a single selected item rendered as a badge with optional icon and remove action.\n */\nexport interface SelectedBadgeNodeProps {\n  /** Text label displayed inside the badge. */\n  label: string;\n  /** Maximum width for the label text before it truncates with tooltip. */\n  badgeLabelMaxWidth: string;\n  /** Additional class names applied to the underlying `Badge` element. */\n  badgeClassName?: string;\n  /** Inline styles applied to the underlying `Badge` element. */\n  badgeStyle?: CSSProperties;\n  /** Optional leading icon component rendered before the label. */\n  IconComponent?: React.ComponentType<{ className?: string }>;\n  /** Whether the leading icon should be shown when `IconComponent` is provided. */\n  showIcon?: boolean;\n  /** Additional class names applied to the leading icon. */\n  iconClassName?: string;\n  /** Inline styles applied to the leading icon. */\n  iconStyle?: CSSProperties;\n  /** Callback invoked when the badge's remove action is triggered. */\n  onRemove: () => void;\n  /**\n   * Accessible label for the remove button.\n   * Defaults to \"Remove {label} from selection\" when not provided.\n   */\n  removeAriaLabel?: string;\n  /** When true, renders a more compact visual style for small layouts. */\n  compactMode?: boolean;\n  /**\n   * Controls visibility of the trailing remove (X) icon.\n   * When false, the remove control is hidden entirely.\n   * Defaults to true.\n   */\n  showRemoveIcon?: boolean;\n}\n\nexport const SelectedBadgeNode: React.FC<SelectedBadgeNodeProps> = ({\n  label,\n  badgeLabelMaxWidth,\n  badgeClassName,\n  badgeStyle,\n  IconComponent,\n  showIcon = true,\n  iconClassName,\n  iconStyle,\n  onRemove,\n  removeAriaLabel,\n  compactMode,\n  showRemoveIcon = true,\n}) => {\n  return (\n    <Badge className={cn('[&>svg]:pointer-events-auto', badgeClassName)} style={badgeStyle}>\n      {IconComponent && showIcon && (\n        <IconComponent className={iconClassName} {...(iconStyle ? { style: iconStyle } : {})} />\n      )}\n      <LongText maxWidth={badgeLabelMaxWidth} className=\"text-xs leading-normal\">\n        {label}\n      </LongText>\n      {showRemoveIcon && (\n        <div\n          role=\"button\"\n          tabIndex={0}\n          onClick={(event) => {\n            event.stopPropagation();\n            onRemove();\n          }}\n          onKeyDown={(event) => {\n            if (event.key === 'Enter' || event.key === ' ') {\n              event.preventDefault();\n              event.stopPropagation();\n              onRemove();\n            }\n          }}\n          aria-label={removeAriaLabel ?? `Remove ${label} from selection`}\n          className={cn(\n            'relative -m-0.5 ml-2 h-4 w-4 cursor-pointer rounded-sm p-0.5 hover:bg-white/20 focus:outline-none focus:ring-1 focus:ring-white/50 dark:focus:ring-black/50 dark:hover:bg-black/20',\n            compactMode && 'ml-1'\n          )}\n        >\n          <XCircle className={cn('absolute top-0 right-0 h-3 w-3', compactMode && 'h-2.5 w-2')} />\n        </div>\n      )}\n    </Badge>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/selected-badge-node/component.tsx"
+    },
+    {
+      "path": "registry/new-york/selected-badge-node/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/selected-badge-node/index.ts"
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breadcrumb",
+  "dependencies": ["@radix-ui/react-slot", "lucide-react"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/breadcrumb/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/breadcrumb/index.ts"
+    },
+    {
+      "path": "registry/new-york/breadcrumb/component.tsx",
+      "content": "import * as React from 'react';\nimport { Slot } from '@radix-ui/react-slot';\nimport { ChevronRight, MoreHorizontal } from 'lucide-react';\n\nimport { cn } from '../../../../lib/utils';\n\nconst Breadcrumb = React.forwardRef<HTMLElement, React.ComponentPropsWithoutRef<'nav'>>(\n  function Breadcrumb(props, ref) {\n    return <nav ref={ref} aria-label=\"breadcrumb\" data-slot=\"breadcrumb\" {...props} />;\n  }\n);\n\nconst BreadcrumbList = React.forwardRef<HTMLOListElement, React.ComponentPropsWithoutRef<'ol'>>(\n  function BreadcrumbList({ className, ...props }, ref) {\n    return (\n      <ol\n        ref={ref}\n        data-slot=\"breadcrumb-list\"\n        className={cn(\n          'flex flex-wrap items-center gap-1.5 break-words text-muted-foreground text-sm sm:gap-2.5',\n          className\n        )}\n        {...props}\n      />\n    );\n  }\n);\n\nconst BreadcrumbItem = React.forwardRef<HTMLLIElement, React.ComponentPropsWithoutRef<'li'>>(\n  function BreadcrumbItem({ className, ...props }, ref) {\n    return (\n      <li\n        ref={ref}\n        data-slot=\"breadcrumb-item\"\n        className={cn('inline-flex items-center gap-1.5', className)}\n        {...props}\n      />\n    );\n  }\n);\n\nconst BreadcrumbLink = React.forwardRef<\n  HTMLAnchorElement,\n  React.ComponentPropsWithoutRef<'a'> & {\n    asChild?: boolean;\n  }\n>(function BreadcrumbLink({ asChild, className, ...props }, ref) {\n  const Comp = asChild ? Slot : 'a';\n\n  return (\n    <Comp\n      ref={ref}\n      data-slot=\"breadcrumb-link\"\n      className={cn('transition-colors hover:text-foreground', className)}\n      {...props}\n    />\n  );\n});\n\nconst BreadcrumbPage = React.forwardRef<HTMLSpanElement, React.ComponentPropsWithoutRef<'span'>>(\n  function BreadcrumbPage({ className, ...props }, ref) {\n    return (\n      // biome-ignore lint/a11y/useFocusableInteractive: <NO NEED>\n      <span\n        ref={ref}\n        data-slot=\"breadcrumb-page\"\n        role=\"link\"\n        aria-disabled=\"true\"\n        aria-current=\"page\"\n        className={cn('font-normal text-foreground', className)}\n        {...props}\n      />\n    );\n  }\n);\n\nconst BreadcrumbSeparator = React.forwardRef<HTMLLIElement, React.ComponentPropsWithoutRef<'li'>>(\n  function BreadcrumbSeparator({ children, className, ...props }, ref) {\n    return (\n      <li\n        ref={ref}\n        data-slot=\"breadcrumb-separator\"\n        role=\"presentation\"\n        aria-hidden=\"true\"\n        className={cn('[&>svg]:size-3.5', className)}\n        {...props}\n      >\n        {children ?? <ChevronRight />}\n      </li>\n    );\n  }\n);\n\nconst BreadcrumbEllipsis = React.forwardRef<\n  HTMLSpanElement,\n  React.ComponentPropsWithoutRef<'span'>\n>(function BreadcrumbEllipsis({ className, ...props }, ref) {\n  return (\n    <span\n      ref={ref}\n      data-slot=\"breadcrumb-ellipsis\"\n      role=\"presentation\"\n      aria-hidden=\"true\"\n      className={cn('flex size-9 items-center justify-center', className)}\n      {...props}\n    >\n      <MoreHorizontal className=\"size-4\" />\n      <span className=\"sr-only\">More</span>\n    </span>\n  );\n});\n\nexport {\n  Breadcrumb,\n  BreadcrumbList,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n  BreadcrumbEllipsis,\n};\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/breadcrumb/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

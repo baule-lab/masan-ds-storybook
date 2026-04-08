@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar",
+  "dependencies": ["@radix-ui/react-avatar"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/avatar/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/avatar/index.ts"
+    },
+    {
+      "path": "registry/new-york/avatar/component.tsx",
+      "content": "import * as AvatarPrimitive from '@radix-ui/react-avatar';\nimport * as React from 'react';\nimport { cn } from '../../../../lib/utils';\n\nconst Avatar = React.forwardRef<\n  React.ComponentRef<typeof AvatarPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>\n>(function Avatar({ className, ...props }, ref) {\n  return (\n    <AvatarPrimitive.Root\n      ref={ref}\n      data-slot=\"avatar\"\n      className={cn('relative flex size-8 shrink-0 overflow-hidden rounded-full', className)}\n      {...props}\n    />\n  );\n});\n\nconst AvatarImage = React.forwardRef<\n  React.ComponentRef<typeof AvatarPrimitive.Image>,\n  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Image>\n>(function AvatarImage({ className, ...props }, ref) {\n  return (\n    <AvatarPrimitive.Image\n      ref={ref}\n      data-slot=\"avatar-image\"\n      className={cn('aspect-square size-full', className)}\n      {...props}\n    />\n  );\n});\n\nconst AvatarFallback = React.forwardRef<\n  React.ComponentRef<typeof AvatarPrimitive.Fallback>,\n  React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Fallback>\n>(function AvatarFallback({ className, ...props }, ref) {\n  return (\n    <AvatarPrimitive.Fallback\n      ref={ref}\n      data-slot=\"avatar-fallback\"\n      className={cn('flex size-full items-center justify-center rounded-full bg-muted', className)}\n      {...props}\n    />\n  );\n});\n\nexport { Avatar, AvatarImage, AvatarFallback };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/avatar/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

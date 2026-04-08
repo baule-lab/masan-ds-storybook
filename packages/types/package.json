@@ -1,0 +1,32 @@
+{
+  "name": "@masan-group/types",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "exports": {
+    "./auth": "./src/auth/index.ts",
+    "./common": "./src/common/index.ts",
+    "./plan": "./src/plan/index.ts",
+    "./role": "./src/role/index.ts",
+    "./sku": "./src/sku/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "dependencies": {
+    "@ory/client": "catalog:"
+  }
+}

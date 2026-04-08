@@ -1,0 +1,9 @@
+export { IconThemeLight } from './icon-theme-light';
+export { IconThemeDark } from './icon-theme-dark';
+export { IconThemeSystem } from './icon-theme-system';
+export { IconSidebarInset } from './icon-sidebar-inset';
+export { IconSidebarFloating } from './icon-sidebar-floating';
+export { IconSidebarSidebar } from './icon-sidebar-sidebar';
+export { IconLayoutDefault } from './icon-layout-default';
+export { IconLayoutCompact } from './icon-layout-compact';
+export { IconLayoutFull } from './icon-layout-full';

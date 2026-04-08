@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "segmented-control",
+  "title": "Segmented Control",
+  "description": "Segmented control built on top of Tabs",
+  "dependencies": [],
+  "registryDependencies": ["@masan-group/utils", "@masan-group/tabs"],
+  "files": [
+    {
+      "path": "registry/new-york/segmented-control/component.tsx",
+      "content": "import { cn } from '../../../lib/utils';\nimport { Tabs, TabsList, TabsTrigger } from '../../ui/actions/tabs';\nimport { useControlledState } from '../../../hooks/use-controlled-state';\n\nexport type SegmentedControlProps = {\n  value?: string;\n  defaultValue?: string;\n  onChange?: (value: string) => void;\n  options: {\n    value: string;\n    label: string;\n  }[];\n  disabled?: boolean;\n};\n\nexport const SegmentedControl = ({\n  value: valueProp,\n  defaultValue: defaultValueProp,\n  onChange,\n  options,\n  disabled,\n}: SegmentedControlProps) => {\n  const [value, setValue] = useControlledState({\n    value: valueProp,\n    defaultValue: defaultValueProp,\n    onChange,\n  });\n\n  return (\n    <Tabs value={value} onValueChange={setValue} className={cn(disabled && 'opacity-50')}>\n      <TabsList>\n        {options.map((option) => (\n          <TabsTrigger key={option.value} value={option.value} disabled={disabled}>\n            {option.label}\n          </TabsTrigger>\n        ))}\n      </TabsList>\n    </Tabs>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/segmented-control/component.tsx"
+    },
+    {
+      "path": "registry/new-york/segmented-control/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:component",
+      "target": "src/components/patterns/segmented-control/index.ts"
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sonner",
+  "dependencies": ["class-variance-authority", "sonner"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/sonner/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/feedback/sonner/index.ts"
+    },
+    {
+      "path": "registry/new-york/sonner/component.tsx",
+      "content": "import { cva } from 'class-variance-authority';\nimport { Toaster as Sonner, type ToasterProps } from 'sonner';\nimport { cn } from '../../../../lib/utils';\n\nconst toasterVariants = cva('toaster group [&_div[data-content]]:w-full');\n\nexport function Toaster({ theme = 'system', className, toastOptions, ...props }: ToasterProps) {\n  return (\n    <Sonner\n      theme={theme as ToasterProps['theme']}\n      className={cn(toasterVariants(), className)}\n      toastOptions={{\n        classNames: {\n          toast: cn('border-border bg-popover text-popover-foreground'),\n          success: cn(\n            '[--normal-bg:color-mix(in_oklab,light-dark(var(--color-green-600),var(--color-green-400))_10%,var(--background))]',\n            '[--normal-text:light-dark(var(--color-green-600),var(--color-green-400))]',\n            '[--normal-border:light-dark(var(--color-green-600),var(--color-green-400))]',\n            'border-[var(--normal-border)] bg-[var(--normal-bg)] text-[var(--normal-text)]',\n            '[&_[data-description]]:!text-[var(--normal-text)]/70'\n          ),\n          warning: cn(\n            '[--normal-bg:color-mix(in_oklab,light-dark(var(--color-amber-600),var(--color-amber-400))_10%,var(--background))]',\n            '[--normal-text:light-dark(var(--color-amber-600),var(--color-amber-400))]',\n            '[--normal-border:light-dark(var(--color-amber-600),var(--color-amber-400))]',\n            'border-[var(--normal-border)] bg-[var(--normal-bg)] text-[var(--normal-text)]',\n            '[&_[data-description]]:!text-[var(--normal-text)]/70'\n          ),\n          error: cn(\n            '[--normal-bg:color-mix(in_oklab,var(--destructive)_10%,var(--background))]',\n            '[--normal-text:var(--destructive)]',\n            '[--normal-border:var(--destructive)]',\n            'border-[var(--normal-border)] bg-[var(--normal-bg)] text-[var(--normal-text)]',\n            '[&_[data-description]]:!text-[var(--normal-text)]/70'\n          ),\n        },\n        ...toastOptions,\n      }}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/feedback/sonner/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

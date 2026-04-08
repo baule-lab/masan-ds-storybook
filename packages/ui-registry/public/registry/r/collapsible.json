@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "collapsible",
+  "dependencies": ["@radix-ui/react-collapsible"],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/collapsible/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/collapsible/index.ts"
+    },
+    {
+      "path": "registry/new-york/collapsible/component.tsx",
+      "content": "import * as React from 'react';\nimport * as CollapsiblePrimitive from '@radix-ui/react-collapsible';\n\nconst Collapsible = React.forwardRef<\n  React.ComponentRef<typeof CollapsiblePrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.Root>\n>(function Collapsible(props, ref) {\n  return <CollapsiblePrimitive.Root ref={ref} data-slot=\"collapsible\" {...props} />;\n});\n\nconst CollapsibleTrigger = React.forwardRef<\n  React.ComponentRef<typeof CollapsiblePrimitive.CollapsibleTrigger>,\n  React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.CollapsibleTrigger>\n>(function CollapsibleTrigger(props, ref) {\n  return (\n    <CollapsiblePrimitive.CollapsibleTrigger ref={ref} data-slot=\"collapsible-trigger\" {...props} />\n  );\n});\n\nconst CollapsibleContent = React.forwardRef<\n  React.ComponentRef<typeof CollapsiblePrimitive.CollapsibleContent>,\n  React.ComponentPropsWithoutRef<typeof CollapsiblePrimitive.CollapsibleContent>\n>(function CollapsibleContent(props, ref) {\n  return (\n    <CollapsiblePrimitive.CollapsibleContent ref={ref} data-slot=\"collapsible-content\" {...props} />\n  );\n});\n\nexport { Collapsible, CollapsibleTrigger, CollapsibleContent };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/collapsible/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

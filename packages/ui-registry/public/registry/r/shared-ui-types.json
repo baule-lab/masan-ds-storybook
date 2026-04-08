@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shared-ui-types",
+  "title": "Shared Types",
+  "description": "Shared type definitions used across components",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/shared-ui-types/date.ts",
+      "content": "export type TimeGranularity = 'day' | 'week' | 'month' | 'year';\n",
+      "type": "registry:lib",
+      "target": "src/types/date.ts"
+    },
+    {
+      "path": "registry/new-york/shared-ui-types/screen.ts",
+      "content": "export type ScreenSize = 'mobile' | 'tablet' | 'desktop';\n",
+      "type": "registry:lib",
+      "target": "src/types/screen.ts"
+    },
+    {
+      "path": "registry/new-york/shared-ui-types/uom.ts",
+      "content": "export const UOM = {\n  CASE: 'case',\n  VND: 'vnd',\n} as const;\n\nexport type UOM = (typeof UOM)[keyof typeof UOM];\n\nexport const UOM_MML = {\n  PACK: 'pack',\n} as const;\n\nexport type UOM_MML = (typeof UOM_MML)[keyof typeof UOM_MML];\n",
+      "type": "registry:lib",
+      "target": "src/types/uom.ts"
+    }
+  ],
+  "type": "registry:block"
+}

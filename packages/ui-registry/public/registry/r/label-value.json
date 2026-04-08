@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "label-value",
+  "dependencies": [],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/label-value/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/label-value/index.ts"
+    },
+    {
+      "path": "registry/new-york/label-value/component.tsx",
+      "content": "import type { ReactNode } from 'react';\nimport { cn } from '../../../../lib/utils';\n\ninterface LabelValueProps {\n  label: string;\n  children: ReactNode;\n  className?: string;\n  labelClassName?: string;\n  valueClassName?: string;\n  variant?: 'default' | 'outline';\n  layout?: 'row' | 'row-start' | 'col';\n}\n\nexport function LabelValue({\n  label,\n  children,\n  className,\n  labelClassName,\n  valueClassName,\n  variant = 'default',\n  layout = 'row',\n}: LabelValueProps) {\n  const valueStyles =\n    variant === 'outline' ? 'rounded-md border bg-transparent px-3 py-2 text-sm' : 'text-sm';\n\n  if (layout === 'row' || layout === 'row-start') {\n    return (\n      <div\n        className={cn(\n          'flex items-start gap-3',\n          layout === 'row-start' ? 'justify-start' : 'justify-between',\n          className\n        )}\n      >\n        <label\n          className={cn(\n            'whitespace-nowrap text-muted-foreground text-xs',\n            'min-w-[150px]',\n            labelClassName\n          )}\n        >\n          {label}\n        </label>\n        <div className={cn('text-sm', valueStyles, valueClassName)}>{children}</div>\n      </div>\n    );\n  }\n\n  return (\n    <div className={cn('grid gap-2', className)}>\n      <label className={cn('text-muted-foreground text-xs', labelClassName)}>{label}</label>\n      <div className={cn('text-sm', valueStyles, valueClassName)}>{children}</div>\n    </div>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/label-value/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "table",
+  "dependencies": [],
+  "registryDependencies": ["@masan-group/utils"],
+  "files": [
+    {
+      "path": "registry/new-york/table/index.ts",
+      "content": "export * from './component';\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/table/index.ts"
+    },
+    {
+      "path": "registry/new-york/table/component.tsx",
+      "content": "import * as React from 'react';\nimport { cn } from '../../../../lib/utils';\n\nconst Table = React.forwardRef<\n  HTMLTableElement,\n  React.ComponentPropsWithoutRef<'table'> & {\n    classNameWrapper?: React.ComponentProps<'div'>['className'];\n  }\n>(function Table({ className, classNameWrapper, ...props }, ref) {\n  return (\n    <div data-slot=\"table-container\" className={cn('relative w-full', classNameWrapper)}>\n      <table\n        ref={ref}\n        data-slot=\"table\"\n        className={cn('w-full caption-bottom text-sm', className)}\n        {...props}\n      />\n    </div>\n  );\n});\n\nconst TableHeader = React.forwardRef<\n  HTMLTableSectionElement,\n  React.ComponentPropsWithoutRef<'thead'>\n>(function TableHeader({ className, ...props }, ref) {\n  return (\n    <thead\n      ref={ref}\n      data-slot=\"table-header\"\n      className={cn('[&_tr]:border-b', 'sticky top-0 z-10 bg-background', className)}\n      {...props}\n    />\n  );\n});\n\nconst TableBody = React.forwardRef<\n  HTMLTableSectionElement,\n  React.ComponentPropsWithoutRef<'tbody'>\n>(function TableBody({ className, ...props }, ref) {\n  return (\n    <tbody\n      ref={ref}\n      data-slot=\"table-body\"\n      className={cn('[&_tr:last-child]:border-0', className)}\n      {...props}\n    />\n  );\n});\n\nconst TableFooter = React.forwardRef<\n  HTMLTableSectionElement,\n  React.ComponentPropsWithoutRef<'tfoot'>\n>(function TableFooter({ className, ...props }, ref) {\n  return (\n    <tfoot\n      ref={ref}\n      data-slot=\"table-footer\"\n      className={cn('border-t bg-muted/50 font-medium [&>tr]:last:border-b-0', className)}\n      {...props}\n    />\n  );\n});\n\nconst TableRow = React.forwardRef<HTMLTableRowElement, React.ComponentPropsWithoutRef<'tr'>>(\n  function TableRow({ className, ...props }, ref) {\n    return (\n      <tr\n        ref={ref}\n        data-slot=\"table-row\"\n        className={cn(\n          'border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted',\n          className\n        )}\n        {...props}\n      />\n    );\n  }\n);\n\nconst TableHead = React.forwardRef<HTMLTableCellElement, React.ComponentPropsWithoutRef<'th'>>(\n  function TableHead({ className, ...props }, ref) {\n    return (\n      <th\n        ref={ref}\n        data-slot=\"table-head\"\n        className={cn(\n          'h-8 whitespace-nowrap px-1.5 text-start align-middle font-medium text-foreground [&>[role=checkbox]]:translate-y-[2px]',\n          className\n        )}\n        {...props}\n      />\n    );\n  }\n);\n\nconst TableCell = React.forwardRef<HTMLTableCellElement, React.ComponentPropsWithoutRef<'td'>>(\n  function TableCell({ className, ...props }, ref) {\n    return (\n      <td\n        ref={ref}\n        data-slot=\"table-cell\"\n        className={cn(\n          'whitespace-nowrap p-1.5 align-middle [&>[role=checkbox]]:translate-y-[2px]',\n          className\n        )}\n        {...props}\n      />\n    );\n  }\n);\n\nconst TableCaption = React.forwardRef<\n  HTMLTableCaptionElement,\n  React.ComponentPropsWithoutRef<'caption'>\n>(function TableCaption({ className, ...props }, ref) {\n  return (\n    <caption\n      ref={ref}\n      data-slot=\"table-caption\"\n      className={cn('mt-4 text-muted-foreground text-sm', className)}\n      {...props}\n    />\n  );\n});\n\nexport { Table, TableHeader, TableBody, TableFooter, TableHead, TableRow, TableCell, TableCaption };\n",
+      "type": "registry:ui",
+      "target": "src/components/ui/display/table/component.tsx"
+    }
+  ],
+  "type": "registry:ui"
+}
