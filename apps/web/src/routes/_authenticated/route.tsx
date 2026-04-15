@@ -1,4 +1,4 @@
-import { createFileRoute, Outlet, Link } from '@tanstack/react-router';
+import { createFileRoute, Outlet, Link, useLocation } from '@tanstack/react-router';
 import {
   Layout,
   AppSidebar,
@@ -7,11 +7,10 @@ import {
   Main,
   ConfigDrawer,
   ThemeSwitch,
-  AppTitle,
 } from '@masan-group/shared-ui/layout';
 import type { LinkComponentProps } from '@masan-group/shared-ui/layout';
-import { MasanLogo, MasanLogoIcon } from '@masan-group/shared-ui/masan-logo';
 import { navGroups } from '@/config/nav-data';
+import { SidebarCompanyHeader } from '@/components/sidebar-company-header';
 
 /**
  * Adapter: bridges shared-ui's simple LinkComponentProps with TanStack Router's Link.
@@ -23,6 +22,32 @@ function RouterLink({ to, children, ...props }: LinkComponentProps) {
       {children}
     </Link>
   );
+}
+
+function titleFromPath(value: string) {
+  if (value === 'dashboard') {
+    return 'Material Requirement Plan';
+  }
+
+  return value
+    .split('-')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
+function buildBreadcrumbs(pathname: string) {
+  const parts = pathname.split('/').filter(Boolean);
+
+  if (parts.length === 0) {
+    return [{ label: 'Material Requirement Plan', isPage: true }];
+  }
+
+  return parts.map((part, index) => ({
+    label: titleFromPath(part),
+    href: `/${parts.slice(0, index + 1).join('/')}`,
+    isPage: index === parts.length - 1,
+  }));
 }
 
 /**
@@ -41,27 +66,22 @@ const sampleUser = {
 };
 
 function AuthenticatedLayout() {
+  const location = useLocation();
+  const breadcrumbs = buildBreadcrumbs(location.pathname);
+
   return (
     <Layout
       linkComponent={RouterLink}
       sidebar={
         <AppSidebar
           navGroups={navGroups}
-          header={
-            <AppTitle
-              logo={<MasanLogo className="h-10 w-auto" />}
-              collapsedLogo={<MasanLogoIcon className="size-8" />}
-            />
-          }
+          header={<SidebarCompanyHeader />}
           footer={<NavUser user={sampleUser} />}
         />
       }
     >
       <AppHeader
-        breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Dashboard', isPage: true },
-        ]}
+        breadcrumbs={breadcrumbs}
         fixed
         actions={
           <div className="flex items-center gap-2">

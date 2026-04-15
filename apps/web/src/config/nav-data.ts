@@ -1,35 +1,68 @@
-import { BarChart3, Bell, FileText, Home, Mail, Settings, Users } from 'lucide-react';
+import {
+  ClipboardList,
+  Database,
+  LayoutGrid,
+  Settings,
+  TrendingUp,
+} from 'lucide-react';
 import type { NavGroup } from '@masan-group/shared-ui/layout';
-
-/**
- * Sample navigation groups for the boilerplate sidebar
- * Replace with real nav data for your application
- */
 
 export const navGroups: NavGroup[] = [
   {
-    title: 'Main',
+    title: 'Main Menu',
     items: [
-      { title: 'Dashboard', url: '/', icon: Home },
-      { title: 'Analytics', url: '/analytics', icon: BarChart3 },
       {
-        title: 'Documents',
-        icon: FileText,
+        title: 'Dashboard',
+        icon: LayoutGrid,
         items: [
-          { title: 'All Documents', url: '/documents' },
-          { title: 'Shared', url: '/documents/shared' },
-          { title: 'Drafts', url: '/documents/drafts', badge: '3' },
+          { title: 'Stats report', url: '/dashboard' },
+          { title: 'Alerts', url: '/dashboard/alerts' },
         ],
       },
-    ],
-  },
-  {
-    title: 'Management',
-    items: [
-      { title: 'Users', url: '/users', icon: Users },
-      { title: 'Messages', url: '/messages', icon: Mail, badge: '12' },
-      { title: 'Notifications', url: '/notifications', icon: Bell },
-      { title: 'Settings', url: '/settings', icon: Settings },
+      {
+        title: 'Data Governance',
+        icon: Database,
+        items: [
+          { title: 'SKU Management', url: '/data-governance/sku-management' },
+          { title: 'Price Management', url: '/data-governance/price-management' },
+          {
+            title: 'Active Item Code Mapping',
+            url: '/data-governance/active-item-code-mapping',
+          },
+          { title: 'DP Management', url: '/data-governance/dp-management' },
+          { title: 'DC Mapping', url: '/data-governance/dc-mapping' },
+          { title: 'Data Upload', url: '/data-governance/data-upload' },
+        ],
+      },
+      {
+        title: 'Forecasting Engine',
+        icon: TrendingUp,
+        items: [
+          { title: 'Baseline', url: '/forecasting-engine/baseline' },
+          { title: 'DP Baseline', url: '/forecasting-engine/dp-baseline' },
+          { title: 'Forecast Tracking', url: '/forecasting-engine/forecast-tracking' },
+        ],
+      },
+      {
+        title: 'Planning',
+        icon: ClipboardList,
+        items: [
+          { title: 'Planning Overview', url: '/planning/planning-overview' },
+          { title: 'Demand vs Supply', url: '/planning/demand-vs-supply' },
+          { title: 'Promotion', url: '/planning/promotion' },
+          { title: 'Configuration', url: '/planning/configuration' },
+        ],
+      },
+      {
+        title: 'Administration',
+        icon: Settings,
+        items: [
+          { title: 'Users', url: '/administration/users' },
+          { title: 'Roles', url: '/administration/roles' },
+          { title: 'Approval Workflows', url: '/administration/approval-workflows' },
+          { title: 'Workflow Mapping', url: '/administration/workflow-mapping' },
+        ],
+      },
     ],
   },
 ];
