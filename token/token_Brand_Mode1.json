@@ -1,0 +1,44 @@
+{
+  "e2e": {
+    "blue-100": {
+      "$type": "color",
+      "$value": "#B0C5D6"
+    },
+    "blue-200": {
+      "$type": "color",
+      "$value": "#8AA9C3"
+    },
+    "blue-300": {
+      "$type": "color",
+      "$value": "#4785AD"
+    },
+    "blue-400": {
+      "$type": "color",
+      "$value": "#336996"
+    },
+    "blue-50": {
+      "$type": "color",
+      "$value": "#E6ECF2"
+    },
+    "blue-500": {
+      "$type": "color",
+      "$value": "#00447C"
+    },
+    "blue-600": {
+      "$type": "color",
+      "$value": "#003E71"
+    },
+    "blue-700": {
+      "$type": "color",
+      "$value": "#003058"
+    },
+    "blue-800": {
+      "$type": "color",
+      "$value": "#002544"
+    },
+    "blue-900": {
+      "$type": "color",
+      "$value": "#001D34"
+    }
+  }
+}

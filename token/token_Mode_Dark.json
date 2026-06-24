@@ -1,0 +1,188 @@
+{
+  "Color": {
+    "$type": "color",
+    "$value": "#171717"
+  },
+  "accent": {
+    "$type": "color",
+    "$value": "{colors.dark.accent}"
+  },
+  "accent-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.accent-foreground}"
+  },
+  "background": {
+    "$type": "color",
+    "$value": "{colors.dark.background}"
+  },
+  "border": {
+    "$type": "color",
+    "$value": "{colors.dark.border}"
+  },
+  "card": {
+    "$type": "color",
+    "$value": "{colors.dark.card}"
+  },
+  "card-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.card-foreground}"
+  },
+  "chart": {
+    "chart-1": {
+      "$type": "color",
+      "$value": "{colors.dark.chart.chart-1}"
+    },
+    "chart-2": {
+      "$type": "color",
+      "$value": "{colors.dark.chart.chart-2}"
+    },
+    "chart-3": {
+      "$type": "color",
+      "$value": "{colors.dark.chart.chart-3}"
+    },
+    "chart-4": {
+      "$type": "color",
+      "$value": "{colors.dark.chart.chart-4}"
+    },
+    "chart-5": {
+      "$type": "color",
+      "$value": "{colors.dark.chart.chart-5}"
+    }
+  },
+  "destructive": {
+    "$type": "color",
+    "$value": "{colors.dark.destructive}"
+  },
+  "destructive-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.destructive-foreground}"
+  },
+  "foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.foreground}"
+  },
+  "input": {
+    "$type": "color",
+    "$value": "{colors.dark.input}"
+  },
+  "muted": {
+    "$type": "color",
+    "$value": "{colors.dark.muted}"
+  },
+  "muted-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.muted-foreground}"
+  },
+  "opacity-30": {
+    "$type": "color",
+    "$value": "{colors.dark.opacity-30}"
+  },
+  "opacity-50": {
+    "$type": "color",
+    "$value": "{colors.dark.opacity-50}"
+  },
+  "opacity-80": {
+    "$type": "color",
+    "$value": "{colors.dark.opacity-80}"
+  },
+  "opacity-90": {
+    "$type": "color",
+    "$value": "{colors.dark.opacity-90}"
+  },
+  "popover": {
+    "$type": "color",
+    "$value": "{colors.dark.popover}"
+  },
+  "popover-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.popover-foreground}"
+  },
+  "primary": {
+    "$type": "color",
+    "$value": "{colors.dark.primary}"
+  },
+  "primary-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.primary-foreground}"
+  },
+  "ring": {
+    "$type": "color",
+    "$value": "{colors.dark.ring}"
+  },
+  "secondary": {
+    "$type": "color",
+    "$value": "{colors.dark.secondary}"
+  },
+  "secondary-foreground": {
+    "$type": "color",
+    "$value": "{colors.dark.secondary-foreground}"
+  },
+  "shadow": {
+    "2xl": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.2xl}"
+    },
+    "2xs": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.2xs}"
+    },
+    "lg": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.lg}"
+    },
+    "md": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.md}"
+    },
+    "shadow": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.shadow}"
+    },
+    "sm": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.sm}"
+    },
+    "xl": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.xl}"
+    },
+    "xs": {
+      "$type": "color",
+      "$value": "{colors.dark.shadow.xs}"
+    }
+  },
+  "sidebar": {
+    "accent": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.accent}"
+    },
+    "accent-foreground": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.accent-foreground}"
+    },
+    "border": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.border}"
+    },
+    "foreground": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.foreground}"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.primary}"
+    },
+    "primary-foreground": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.primary-foreground}"
+    },
+    "ring": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.ring}"
+    },
+    "sidebar": {
+      "$type": "color",
+      "$value": "{colors.dark.sidebar.sidebar}"
+    }
+  }
+}
